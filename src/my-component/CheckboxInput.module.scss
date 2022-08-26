@@ -1,0 +1,32 @@
+@import '../assets/fonts.module.scss';
+
+.Checkbox {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  width: 1.5625rem !important;
+  height: 1.5625rem !important;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+
+  > img {
+    width: 0.938rem;
+    height: 0.938rem;
+  }
+}
+
+.container {
+  display: flex;
+  p {
+    @include Roboto-R16();
+    align-self: center;
+    color: #646464;
+    margin-left: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,63 @@
+@import '../assets/fonts.module.scss';
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  > p {
+    padding: 0px;
+    margin: 0px;
+    @include Roboto-M16;
+    color: black;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.container {
+  // min-height: 50px;
+  display: flex;
+  flex: 1;
+  background-color: rgb(181, 179, 182);
+  > svg path {
+    fill: black;
+  }
+  max-height: 40px;
+
+  > svg {
+    background-color: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    border-right: 1px solid #eeeeee;
+    width: 0.75rem;
+    height: auto;
+  }
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  // &:hover {
+  //   >svg path {
+  //     fill: black;
+  //   }
+  // }
+}
+
+.inputt {
+  background-color: transparent;
+  border: none;
+  @include Roboto-R16();
+  text-align: start;
+  flex: 1;
+  color: black;
+  padding: 0px;
+  padding-left: 10px;
+  height: 40px;
+  &:focus-within {
+    outline: none;
+
+    > input {
+      outline: none;
+    }
+  }
+
+  // height: 100%;
+}
