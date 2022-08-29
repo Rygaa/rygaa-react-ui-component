@@ -1,6 +1,6 @@
 {
   "name": "@rygaa/react-ui-component",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "My personal React component Library - tutorial",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thmsgbrt/my-react-component-library.git"
+    "url": "git+https://github.com/Rygaa/rygaa-react-ui-component"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/thmsgbrt/my-react-component-library/issues"
   },
-  "homepage": "https://github.com/thmsgbrt/my-react-component-library#readme",
+  "homepage": "git+https://github.com/Rygaa/rygaa-react-ui-component",
   "devDependencies": {
     "@types/react": "^16.9.9",
     "@types/styled-components": "^4.1.19",
@@ -38,9 +38,6 @@
     "dist"
   ],
   "typings": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "@rollup/plugin-image": "^2.1.1",
     "node-sass": "^7.0.1"

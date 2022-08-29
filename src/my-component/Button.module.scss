@@ -88,15 +88,16 @@ $container-background-color-05__hover: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: blue;
 
   cursor: pointer;
   border-radius: 5px;
   transition: 0.2s;
   > i {
-    color: white;
+    // color: white;
     // width: 12px;
     // height: 12px;
-    --ggs: 0.6;
+    --ggs: 1;
     font-size: 0.1;
   }
   button {

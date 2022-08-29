@@ -11,10 +11,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryType?: string;
   rySize?: string;
   ryFontSize?: string;
+  ryShowOnlyIcon?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   ryShowIcon,
+  ryShowOnlyIcon,
   ryFontSize,
   rySize,
   ryType,
@@ -39,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={containerOnClick}
     >
       {ryIcon}
-      <button {...props}>{ryText}</button>
+      {!ryShowOnlyIcon && <button {...props}>{ryText}</button>}
     </div>
   );
 
