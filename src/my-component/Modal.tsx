@@ -8,6 +8,7 @@ interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
   ryLabel?: string;
   ryOpen?: false;
   ryClass: any;
+  ryClose?: any;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -16,17 +17,14 @@ const Modal: React.FC<ModalProps> = ({
   ryIcon,
   ryOpen,
   ryClass,
+  ryClose,
   ...props
 }) => {
   return ryOpen ? (
     <div className={ryClass}>
-      <div>{props.children}</div>
+      <div  >{props.children}</div>
       <div
-        onClick={e => {
-          if (props.onClick) {
-            props.onClick(e);
-          }
-        }}
+        onClick={() => { console.log('rrr'); ryClose(); }}
       ></div>
     </div>
   ) : null;

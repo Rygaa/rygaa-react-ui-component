@@ -6,6 +6,7 @@ interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
     ryLabel?: string;
     ryOpen?: false;
     ryClass: any;
+    ryClose?: any;
 }
 declare const Modal: React.FC<ModalProps>;
 export { ModalProps, Modal };

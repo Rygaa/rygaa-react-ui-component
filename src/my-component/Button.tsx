@@ -10,17 +10,17 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryContainerStyle?: Object;
   ryType?: string;
   rySize?: string;
-  ryFontSize?: string;
+  ryClass?: any;
   ryShowOnlyIcon?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   ryShowIcon,
   ryShowOnlyIcon,
-  ryFontSize,
   rySize,
   ryType,
   ryContainerStyle,
+  ryClass,
   ryAlign,
   ryIcon,
   ryText,
@@ -28,7 +28,6 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const stylee = ryAlign ? { alignSelf: 'flex-end' } : {};
   const containerOnClick = (e: any) => {
-    console.log('rinn');
     if (e.target === e.currentTarget) {
       props.onClick && props.onClick(e);
     }
@@ -37,10 +36,10 @@ const Button: React.FC<ButtonProps> = ({
   const ButtonWithIcon = (
     <div
       style={{ ...ryContainerStyle, ...stylee }}
-      className={classNameGenerator(ryType, rySize, ryFontSize)}
+      className={classNameGenerator(ryType, rySize, ryClass, ryShowIcon)}
       onClick={containerOnClick}
     >
-      {ryIcon}
+      <div className={classes['icon-container']}>{ryIcon}</div>
       {!ryShowOnlyIcon && <button {...props}>{ryText}</button>}
     </div>
   );
@@ -48,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
   const ButtonWithoutIcon = (
     <div
       style={{ ...ryContainerStyle, ...stylee }}
-      className={classNameGenerator(ryType, rySize, ryFontSize)}
+      className={classNameGenerator(ryType, rySize, ryClass, ryShowIcon)}
       onClick={containerOnClick}
     >
       <button {...props}>{ryText}</button>
@@ -61,9 +60,13 @@ const Button: React.FC<ButtonProps> = ({
 const classNameGenerator = (
   ryType?: string,
   rySize?: string,
-  ryFontSize?: string
+  ryClass?: any,
+  ryShowIcon?: boolean
 ) => {
-  const x = [classes['container']];
+  const x = ryShowIcon
+    ? [classes['container-with-icon']]
+    : [classes['container-without-icon']];
+  x.push(ryClass);
   switch (ryType) {
     case 'Primary':
       x.push(classes['primary']);
@@ -101,31 +104,6 @@ const classNameGenerator = (
 
     case 'size5':
       x.push(classes['size5']);
-      break;
-
-    default:
-      break;
-  }
-
-  switch (ryFontSize) {
-    case 'font-size1':
-      x.push(classes['font-size1']);
-      break;
-
-    case 'font-size2':
-      x.push(classes['font-size2']);
-      break;
-
-    case 'font-size3':
-      x.push(classes['font-size3']);
-      break;
-
-    case 'font-size4':
-      x.push(classes['font-size4']);
-      break;
-
-    case 'font-size5':
-      x.push(classes['font-size5']);
       break;
 
     default:

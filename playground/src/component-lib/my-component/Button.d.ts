@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     ryContainerStyle?: Object;
     ryType?: string;
     rySize?: string;
-    ryFontSize?: string;
+    ryClass?: any;
     ryShowOnlyIcon?: boolean;
 }
 declare const Button: React.FC<ButtonProps>;
