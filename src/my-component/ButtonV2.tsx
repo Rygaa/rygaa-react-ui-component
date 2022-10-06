@@ -9,6 +9,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryIcon?: any;
   ryContainerStyle?: Object;
   ryContainerClassname?: any;
+  ryShowOnlyIcon?: boolean;
 }
 
 const ButtonV2: React.FC<ButtonProps> = ({
@@ -18,6 +19,7 @@ const ButtonV2: React.FC<ButtonProps> = ({
   ryIcon,
   ryContainerStyle,
   ryContainerClassname,
+  ryShowOnlyIcon,
   ...props
 }) => {
 
@@ -34,7 +36,7 @@ const ButtonV2: React.FC<ButtonProps> = ({
       onClick={containerOnClick}
     >
       <div className={classes['icon-container']}>{ryIcon}</div>
-      {!ryIcon && <button {...props}>{ryButtonText}</button>}
+      {!ryShowOnlyIcon && <button {...props}>{ryButtonText}</button>}
     </div>
   );
 
