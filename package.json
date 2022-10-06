@@ -1,6 +1,6 @@
 {
   "name": "@rygaa/react-ui-component",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "My personal React component Library - tutorial",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

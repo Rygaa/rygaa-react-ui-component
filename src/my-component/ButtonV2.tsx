@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryContainerClassname?: any;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonV2: React.FC<ButtonProps> = ({
   ryButtonText,
   ryButtonType,
   ryButtonSize,
@@ -107,4 +107,4 @@ const classNameGenerator = (
   return classNames(x);
 };
 
-export { ButtonProps, Button };
+export { ButtonProps, ButtonV2 };

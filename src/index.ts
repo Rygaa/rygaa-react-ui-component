@@ -1,4 +1,5 @@
 import { Button } from './my-component/Button';
+import { ButtonV2 } from './my-component/ButtonV2';
 import { Input } from './my-component/Input';
 import { Page } from './my-component/Page';
 import { CheckboxInput } from './my-component/CheckboxInput';
@@ -10,6 +11,7 @@ import { Modal } from './my-component/Modal';
 
 export {
   Button,
+  ButtonV2,
   Page,
   Input,
   CheckboxInput,
