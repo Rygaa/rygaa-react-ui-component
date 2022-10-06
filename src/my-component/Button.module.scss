@@ -79,33 +79,11 @@ $icon-color-05__hover: transparent;
   }
 }
 
-@mixin button-color-01-02-03-04() {
-  >button {
-    color: white;
-  }
-
-  &:hover {
-    >button {}
-  }
-}
-
-@mixin button-color-05() {
-  >button {
-    color: black;
-  }
-
-  &:hover {
-    >button {
-      color: rgb(88, 88, 88);
-    }
-  }
-}
 
 .container-without-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-
   cursor: pointer;
   border-radius: 5px;
   // transition: 0.2s;
@@ -116,8 +94,6 @@ $icon-color-05__hover: transparent;
     cursor: pointer;
     // transition: 0.2s;
   }
-
-  &:hover {}
 }
 
 .container-with-icon {
@@ -171,10 +147,6 @@ $icon-color-05__hover: transparent;
     >svg path {
       fill: white;
     }
-
-    &:hover {
-      >svg path {}
-    }
   }
 }
 
@@ -205,7 +177,6 @@ $icon-color-05__hover: transparent;
 
 .primary {
   background-color: $container-background-color-01;
-  @include button-color-01-02-03-04();
 
   &:hover {
     background-color: $container-background-color-01__hover;
@@ -214,7 +185,6 @@ $icon-color-05__hover: transparent;
 
 .secondary {
   background-color: $container-background-color-02;
-  @include button-color-01-02-03-04();
 
   &:hover {
     background-color: $container-background-color-02__hover;
@@ -223,7 +193,6 @@ $icon-color-05__hover: transparent;
 
 .danger {
   background-color: $container-background-color-03;
-  @include button-color-01-02-03-04();
 
   &:hover {
     background-color: $container-background-color-03__hover;
@@ -232,7 +201,6 @@ $icon-color-05__hover: transparent;
 
 .warning {
   background-color: $container-background-color-04;
-  @include button-color-01-02-03-04();
 
   &:hover {
     background-color: $container-background-color-04__hover;
@@ -241,12 +209,8 @@ $icon-color-05__hover: transparent;
 
 .none {
   background-color: $container-background-color-05;
-  @include button-color-05();
 
   &:hover {
     background-color: $container-background-color-05__hover;
   }
 }
-
-
-// .icon-container {}
