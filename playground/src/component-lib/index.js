@@ -129,6 +129,62 @@ var classNameGenerator = function (ryType, rySize, ryClass, ryShowIcon) {
     return classNames(x);
 };
 
+var ButtonV2 = function (_a) {
+    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname"]);
+    var containerOnClick = function (e) {
+        if (e.target === e.currentTarget) {
+            props.onClick && props.onClick(e);
+        }
+    };
+    var ButtonWithIcon = (React.createElement("div", { style: ryContainerStyle, className: classNameGenerator$1(ryButtonType, ryButtonSize, props.className, !!ryIcon), onClick: containerOnClick },
+        React.createElement("div", { className: classes['icon-container'] }, ryIcon),
+        !ryIcon && React.createElement("button", __assign({}, props), ryButtonText)));
+    var ButtonWithoutIcon = (React.createElement("div", { style: ryContainerStyle, className: classNameGenerator$1(ryButtonType, ryButtonSize, props.className, !!ryIcon), onClick: containerOnClick },
+        React.createElement("button", __assign({}, props), ryButtonText)));
+    return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+};
+var classNameGenerator$1 = function (ryType, rySize, ryClass, ryShowIcon) {
+    var x = ryShowIcon
+        ? [classes['container-with-icon']]
+        : [classes['container-without-icon']];
+    x.push(ryClass);
+    switch (ryType) {
+        case 'Primary':
+            x.push(classes['primary']);
+            break;
+        case 'Secondary':
+            x.push(classes['secondary']);
+            break;
+        case 'Danger':
+            x.push(classes['danger']);
+            break;
+        case 'Warning':
+            x.push(classes['warning']);
+            break;
+        default:
+            x.push(classes['none']);
+            break;
+    }
+    switch (rySize) {
+        case 'size1':
+            x.push(classes['size1']);
+            break;
+        case 'size2':
+            x.push(classes['size2']);
+            break;
+        case 'size3':
+            x.push(classes['size3']);
+            break;
+        case 'size4':
+            x.push(classes['size4']);
+            break;
+        case 'size5':
+            x.push(classes['size5']);
+            break;
+    }
+    return classNames(x);
+};
+
 var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Input-module_big-container__3KOQx{display:flex;flex-direction:column}.Input-module_big-container__3KOQx>p{padding:0;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:500;color:#000;margin:0 0 .25rem}.Input-module_container__13V8N{display:flex;flex:1;background-color:#b5b3b6;max-height:40px;box-sizing:border-box;background:#fff;border:1px solid #dedede;border-radius:5px}.Input-module_container__13V8N>svg path{fill:#686868}.Input-module_container__13V8N>svg{background-color:#eee;padding:.75rem 1.25rem;border-right:1px solid #eee;width:.75rem;height:auto}.Input-module_inputt__2Mw5y{background-color:transparent;border:none;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:40px}.Input-module_inputt__2Mw5y::placeholder{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;color:#8e8e8e;text-align:left;transition:.1s}.Input-module_inputt__2Mw5y:focus-within{outline:none}.Input-module_inputt__2Mw5y:focus-within::placeholder{color:#fff}.Input-module_inputt__2Mw5y:focus-within>input{outline:none}";
 var classes$1 = {"big-container":"Input-module_big-container__3KOQx","container":"Input-module_container__13V8N","inputt":"Input-module_inputt__2Mw5y"};
 styleInject(css_248z$1);
@@ -256,4 +312,4 @@ var Modal = function (_a) {
         React.createElement("div", { onClick: function () { console.log('rrr'); ryClose(); } }))) : null;
 };
 
-export { Button, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };
+export { Button, ButtonV2, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };
