@@ -1,13 +1,11 @@
 import React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    ryText: string;
-    ryShowIcon?: boolean;
+    ryButtonText: string;
+    ryButtonType: any;
+    ryButtonSize: any;
     ryIcon?: any;
-    ryAlign?: string;
     ryContainerStyle?: Object;
-    ryType?: string;
-    rySize?: string;
-    ryClass?: any;
+    ryContainerClassname?: any;
     ryShowOnlyIcon?: boolean;
 }
 declare const Button: React.FC<ButtonProps>;

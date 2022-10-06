@@ -68,121 +68,23 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Button-module_container-without-icon__1Ioyt{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:5px}.Button-module_container-without-icon__1Ioyt button{background-color:transparent;border:none;cursor:pointer}.Button-module_container-with-icon__pWsB0{display:grid;grid-template-columns:25% 75%;justify-content:center;align-items:center;cursor:pointer;border-radius:5px;transition:.2s;border-top-left-radius:5px;border-bottom-left-radius:5px;display:flex}.Button-module_container-with-icon__pWsB0 button{background-color:transparent;border:none;cursor:pointer;justify-content:center;padding:0}.Button-module_container-with-icon__pWsB0:hover>div:first-child{background-color:#3fc493;border-top-right-radius:50%;border-bottom-right-radius:50%}.Button-module_container-with-icon__pWsB0>div:first-child{display:flex;align-items:center;justify-content:center;align-self:center;justify-self:center;height:100%;border-top-left-radius:5px;border-bottom-left-radius:5px;transition:.2s}.Button-module_container-with-icon__pWsB0>div:first-child>svg{width:17.5px;height:17.5px}.Button-module_container-with-icon__pWsB0>div:first-child>svg path{fill:#fff}.Button-module_size1__zjn3k{width:11.5625rem;height:3.125rem}.Button-module_size1__zjn3k>button{font-size:17.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size2__2c2b8{width:9.8856rem;height:2.5rem}.Button-module_size2__2c2b8>button{font-size:15px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size3__2blMh{width:8.235rem;height:2.2256rem}.Button-module_size3__2blMh>button{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size4__3QCiz{width:6.5881rem;height:2.2256rem}.Button-module_size4__3QCiz>button{font-size:10px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size5__Ur2OI{width:4.9413rem;height:1.3356rem}.Button-module_size5__Ur2OI>button{font-size:7.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_primary__1eaan{background-color:#3ebe8e}.Button-module_primary__1eaan>button{color:#fff}.Button-module_primary__1eaan:hover{background-color:#45d49f}.Button-module_secondary__2Nuvd{background-color:#525252}.Button-module_secondary__2Nuvd>button{color:#fff}.Button-module_secondary__2Nuvd:hover{background-color:#525252}.Button-module_danger__kunT1{background-color:#ef1d1d}.Button-module_danger__kunT1>button{color:#fff}.Button-module_danger__kunT1:hover{background-color:#ff2b2b}.Button-module_warning__1GDa6{background-color:#efc11d}.Button-module_warning__1GDa6>button{color:#fff}.Button-module_warning__1GDa6:hover{background-color:#efc11d}.Button-module_none__2VZaQ{background-color:transparent}.Button-module_none__2VZaQ>button{color:#000}.Button-module_none__2VZaQ:hover>button{color:#585858}.Button-module_none__2VZaQ:hover{background-color:transparent}";
+var css_248z = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Button-module_container-without-icon__1Ioyt{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:5px}.Button-module_container-without-icon__1Ioyt button{background-color:transparent;border:none;cursor:pointer}.Button-module_container-with-icon__pWsB0{display:grid;grid-template-columns:25% 75%;justify-content:center;align-items:center;cursor:pointer;border-radius:5px;transition:.2s;border-top-left-radius:5px;border-bottom-left-radius:5px;display:flex}.Button-module_container-with-icon__pWsB0 button{background-color:transparent;border:none;cursor:pointer;justify-content:center;padding:0}.Button-module_container-with-icon__pWsB0:hover>div:first-child{background-color:#3fc493;border-top-right-radius:50%;border-bottom-right-radius:50%}.Button-module_container-with-icon__pWsB0>div:first-child{display:flex;align-items:center;justify-content:center;align-self:center;justify-self:center;height:100%;border-top-left-radius:5px;border-bottom-left-radius:5px;transition:.2s}.Button-module_container-with-icon__pWsB0>div:first-child>svg{width:17.5px;height:17.5px}.Button-module_container-with-icon__pWsB0>div:first-child>svg path{fill:#fff}.Button-module_size1__zjn3k{width:11.5625rem;height:3.125rem}.Button-module_size1__zjn3k>button{font-size:17.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size2__2c2b8{width:9.8856rem;height:2.5rem}.Button-module_size2__2c2b8>button{font-size:15px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size3__2blMh{width:8.235rem;height:2.2256rem}.Button-module_size3__2blMh>button{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size4__3QCiz{width:6.5881rem;height:2.2256rem}.Button-module_size4__3QCiz>button{font-size:10px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size5__Ur2OI{width:4.9413rem;height:1.3356rem}.Button-module_size5__Ur2OI>button{font-size:7.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_primary__1eaan{background-color:#3ebe8e}.Button-module_primary__1eaan:hover{background-color:#45d49f}.Button-module_secondary__2Nuvd,.Button-module_secondary__2Nuvd:hover{background-color:#525252}.Button-module_danger__kunT1{background-color:#ef1d1d}.Button-module_danger__kunT1:hover{background-color:#ff2b2b}.Button-module_warning__1GDa6,.Button-module_warning__1GDa6:hover{background-color:#efc11d}.Button-module_none__2VZaQ,.Button-module_none__2VZaQ:hover{background-color:transparent}";
 var classes = {"container-without-icon":"Button-module_container-without-icon__1Ioyt","container-with-icon":"Button-module_container-with-icon__pWsB0","size1":"Button-module_size1__zjn3k","size2":"Button-module_size2__2c2b8","size3":"Button-module_size3__2blMh","size4":"Button-module_size4__3QCiz","size5":"Button-module_size5__Ur2OI","primary":"Button-module_primary__1eaan","secondary":"Button-module_secondary__2Nuvd","danger":"Button-module_danger__kunT1","warning":"Button-module_warning__1GDa6","none":"Button-module_none__2VZaQ"};
 styleInject(css_248z);
 
 var Button = function (_a) {
-    var ryShowIcon = _a.ryShowIcon, ryShowOnlyIcon = _a.ryShowOnlyIcon, rySize = _a.rySize, ryType = _a.ryType, ryContainerStyle = _a.ryContainerStyle, ryClass = _a.ryClass, ryAlign = _a.ryAlign, ryIcon = _a.ryIcon, ryText = _a.ryText, props = __rest(_a, ["ryShowIcon", "ryShowOnlyIcon", "rySize", "ryType", "ryContainerStyle", "ryClass", "ryAlign", "ryIcon", "ryText"]);
-    var stylee = ryAlign ? { alignSelf: 'flex-end' } : {};
+    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon"]);
     var containerOnClick = function (e) {
         if (e.target === e.currentTarget) {
             props.onClick && props.onClick(e);
         }
     };
-    var ButtonWithIcon = (React.createElement("div", { style: __assign(__assign({}, ryContainerStyle), stylee), className: classNameGenerator(ryType, rySize, ryClass, ryShowIcon), onClick: containerOnClick },
+    var ButtonWithIcon = (React.createElement("div", { style: ryContainerStyle, className: classNames([classes['container-with-icon'], props.className, ryButtonType, ryButtonSize]), onClick: containerOnClick },
         React.createElement("div", { className: classes['icon-container'] }, ryIcon),
-        !ryShowOnlyIcon && React.createElement("button", __assign({}, props), ryText)));
-    var ButtonWithoutIcon = (React.createElement("div", { style: __assign(__assign({}, ryContainerStyle), stylee), className: classNameGenerator(ryType, rySize, ryClass, ryShowIcon), onClick: containerOnClick },
-        React.createElement("button", __assign({}, props), ryText)));
-    return ryShowIcon ? ButtonWithIcon : ButtonWithoutIcon;
-};
-var classNameGenerator = function (ryType, rySize, ryClass, ryShowIcon) {
-    var x = ryShowIcon
-        ? [classes['container-with-icon']]
-        : [classes['container-without-icon']];
-    x.push(ryClass);
-    switch (ryType) {
-        case 'Primary':
-            x.push(classes['primary']);
-            break;
-        case 'Secondary':
-            x.push(classes['secondary']);
-            break;
-        case 'Danger':
-            x.push(classes['danger']);
-            break;
-        case 'Warning':
-            x.push(classes['warning']);
-            break;
-        default:
-            x.push(classes['none']);
-            break;
-    }
-    switch (rySize) {
-        case 'size1':
-            x.push(classes['size1']);
-            break;
-        case 'size2':
-            x.push(classes['size2']);
-            break;
-        case 'size3':
-            x.push(classes['size3']);
-            break;
-        case 'size4':
-            x.push(classes['size4']);
-            break;
-        case 'size5':
-            x.push(classes['size5']);
-            break;
-    }
-    return classNames(x);
-};
-
-var ButtonV2 = function (_a) {
-    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname"]);
-    var containerOnClick = function (e) {
-        if (e.target === e.currentTarget) {
-            props.onClick && props.onClick(e);
-        }
-    };
-    var ButtonWithIcon = (React.createElement("div", { style: ryContainerStyle, className: classNameGenerator$1(ryButtonType, ryButtonSize, props.className, !!ryIcon), onClick: containerOnClick },
-        React.createElement("div", { className: classes['icon-container'] }, ryIcon),
-        !ryIcon && React.createElement("button", __assign({}, props), ryButtonText)));
-    var ButtonWithoutIcon = (React.createElement("div", { style: ryContainerStyle, className: classNameGenerator$1(ryButtonType, ryButtonSize, props.className, !!ryIcon), onClick: containerOnClick },
+        !ryShowOnlyIcon && React.createElement("button", __assign({}, props), ryButtonText)));
+    var ButtonWithoutIcon = (React.createElement("div", { style: ryContainerStyle, className: classNames([classes['container-without-icon'], props.className, ryButtonType, ryButtonSize]), onClick: containerOnClick },
         React.createElement("button", __assign({}, props), ryButtonText)));
     return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
-};
-var classNameGenerator$1 = function (ryType, rySize, ryClass, ryShowIcon) {
-    var x = ryShowIcon
-        ? [classes['container-with-icon']]
-        : [classes['container-without-icon']];
-    x.push(ryClass);
-    switch (ryType) {
-        case 'Primary':
-            x.push(classes['primary']);
-            break;
-        case 'Secondary':
-            x.push(classes['secondary']);
-            break;
-        case 'Danger':
-            x.push(classes['danger']);
-            break;
-        case 'Warning':
-            x.push(classes['warning']);
-            break;
-        default:
-            x.push(classes['none']);
-            break;
-    }
-    switch (rySize) {
-        case 'size1':
-            x.push(classes['size1']);
-            break;
-        case 'size2':
-            x.push(classes['size2']);
-            break;
-        case 'size3':
-            x.push(classes['size3']);
-            break;
-        case 'size4':
-            x.push(classes['size4']);
-            break;
-        case 'size5':
-            x.push(classes['size5']);
-            break;
-    }
-    return classNames(x);
 };
 
 var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Input-module_big-container__3KOQx{display:flex;flex-direction:column}.Input-module_big-container__3KOQx>p{padding:0;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:500;color:#000;margin:0 0 .25rem}.Input-module_container__13V8N{display:flex;flex:1;background-color:#b5b3b6;max-height:40px;box-sizing:border-box;background:#fff;border:1px solid #dedede;border-radius:5px}.Input-module_container__13V8N>svg path{fill:#686868}.Input-module_container__13V8N>svg{background-color:#eee;padding:.75rem 1.25rem;border-right:1px solid #eee;width:.75rem;height:auto}.Input-module_inputt__2Mw5y{background-color:transparent;border:none;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:40px}.Input-module_inputt__2Mw5y::placeholder{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;color:#8e8e8e;text-align:left;transition:.1s}.Input-module_inputt__2Mw5y:focus-within{outline:none}.Input-module_inputt__2Mw5y:focus-within::placeholder{color:#fff}.Input-module_inputt__2Mw5y:focus-within>input{outline:none}";
@@ -312,4 +214,4 @@ var Modal = function (_a) {
         React.createElement("div", { onClick: function () { console.log('rrr'); ryClose(); } }))) : null;
 };
 
-export { Button, ButtonV2, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };
+export { Button, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };
