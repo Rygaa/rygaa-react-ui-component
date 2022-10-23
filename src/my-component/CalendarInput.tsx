@@ -1,16 +1,20 @@
 import React from 'react';
-import classes from "./Input.module.scss";
+import classes from "./CalendarInput.module.scss";
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+interface CalendarInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   ryImage: any;
   ryShowIcon?: boolean;
   ryIcon?: string;
   ryLabel?: string,
   ryType?: string,
+  ryDateOnChange: any;
+  ryDateValue: Date;
 }
 
-const Input: React.FC<InputProps> = ({ ryShowIcon, ryType, ryLabel, ryIcon, ryImage, ...props }) => {
+const CalendarInput: React.FC<CalendarInputProps> = ({ ryShowIcon, ryDateOnChange, ryDateValue, ryType, ryLabel, ryIcon, ryImage, ...props }) => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState(new Date());
 
@@ -18,8 +22,8 @@ const Input: React.FC<InputProps> = ({ ryShowIcon, ryType, ryLabel, ryIcon, ryIm
     if (ryType == "calendar") {
       if (props.onChange && props.value) {
         return <div>
-          {open && <Calendar className={classes['calendar']} onChange={(e: any) => { console.log(e) }} value={value} />}
-          <button onClick={() => setOpen(!open)}>Open Calendar</button>
+          {open && <DatePicker className={classes['calendar']} onChange={(e: any) => { console.log(e) }} selected={value} />}
+          <button onClick={() => setOpen(!open)}>Open Calendear</button>
         </div>
       }
     } else {
@@ -36,14 +40,14 @@ const Input: React.FC<InputProps> = ({ ryShowIcon, ryType, ryLabel, ryIcon, ryIm
 
   return (
     <div className={classes['big-container']}>
-      {ryLabel && (<p>{ryLabel}aissa11</p>)}
+      {ryLabel && (<p>{ryLabel}</p>)}
       <div className={ryImage ? classes['container'] : classes['container-without']}>
         {ryImage}
-        {x()}
+        <DatePicker className={classes['datepicker-input']} calendarClassName={classes['test01']} onChange={(e: any) => { console.log(e) }} selected={value} />
       </div>
     </div>
   );
 };
 
 
-export { InputProps, Input };
+export { CalendarInputProps, CalendarInput };

@@ -1,0 +1,136 @@
+@import '../assets/fonts.module.scss';
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+
+  >p {
+    padding: 0px;
+    margin: 0px;
+    @include Roboto-M16;
+    color: black;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px;
+  max-height: 2.5rem;
+  background-color: transparent;
+  border: none;
+
+
+  >svg path {
+    fill: #686868;
+  }
+
+  >svg {
+    background-color: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    border-right: 1px solid #eeeeee;
+    width: 0.75rem;
+    height: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #dedede;
+    border-right: none;
+
+  }
+
+  &:focus-within {
+    >input {
+      border: 1px solid rgb(204, 204, 204);
+      border-left: none;
+    }
+
+    >svg {
+      border: 1px solid rgb(204, 204, 204);
+      border-right: none;
+    }
+
+  }
+
+}
+
+
+
+
+
+.container-without {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px;
+  max-height: 2.5rem;
+
+  >svg path {
+    fill: #686868;
+  }
+
+  >svg {
+    background-color: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    border-right: 1px solid #eeeeee;
+    width: 0.75rem;
+    height: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #dedede;
+    border-right: none;
+
+  }
+
+  &:focus-within {
+    >input {
+      border: 1px solid rgb(204, 204, 204);
+    }
+
+    >svg {
+      border: 1px solid rgb(204, 204, 204);
+      border-right: none;
+    }
+
+  }
+
+}
+
+
+
+
+
+
+.datepicker-input {
+  background-color: transparent;
+  border: none;
+  @include Roboto-R16();
+  text-align: start;
+  flex: 1;
+  color: black;
+  padding: 0px;
+  padding-left: 10px;
+  height: 2.5rem;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+
+  &:focus-within {
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    border-left: none;
+  }
+}
+
+
+
+.test01 {
+  // background-color: red;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+}

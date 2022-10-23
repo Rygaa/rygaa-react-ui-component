@@ -7,4 +7,5 @@ import { FileInput } from './my-component/FileInput';
 import { Select } from './my-component/Select';
 import { Dropdown } from './my-component/Dropdown';
 import { Modal } from './my-component/Modal';
-export { Button, Page, Input, CheckboxInput, ColorInput, FileInput, Select, Dropdown, Modal, };
+import { CalendarInput } from './my-component/CalendarInput';
+export { Button, Page, Input, CheckboxInput, ColorInput, FileInput, Select, Dropdown, Modal, CalendarInput, };

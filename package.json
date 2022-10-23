@@ -1,6 +1,6 @@
 {
   "name": "@rygaa/react-ui-component",
-  "version": "1.0.13",
+  "version": "1.0.38",
   "description": "My personal React component Library - tutorial",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -24,6 +24,8 @@
   "homepage": "git+https://github.com/Rygaa/rygaa-react-ui-component",
   "devDependencies": {
     "@types/react": "^16.9.9",
+    "@types/react-calendar": "^3.5.3",
+    "@types/react-datepicker": "^4.4.2",
     "@types/styled-components": "^4.1.19",
     "classnames": "^2.3.1",
     "npm-run-all": "^4.1.5",
@@ -40,10 +42,12 @@
   "typings": "dist/index.d.ts",
   "dependencies": {
     "@rollup/plugin-image": "^2.1.1",
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "react-calendar": "^3.9.0",
+    "react-datepicker": "^4.8.0"
   },
   "peerDependencies": {
-    "react-colorful": "^5.5.1",
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "react-colorful": "^5.5.1"
   }
 }

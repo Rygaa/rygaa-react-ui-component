@@ -1,5 +1,5 @@
 import React from 'react';
-interface FileInputProps extends React.ButtonHTMLAttributes<HTMLElement> {
+interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
     ryImage: string;
     ryShowIcon?: boolean;
     ryIcon?: string;

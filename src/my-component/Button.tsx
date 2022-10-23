@@ -10,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryContainerStyle?: Object;
   ryContainerClassname?: any;
   ryShowOnlyIcon?: boolean;
+  ryContainerAlignSelf?: "flex-start" | "flex-end" | "center";
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,37 +21,58 @@ const Button: React.FC<ButtonProps> = ({
   ryContainerStyle,
   ryContainerClassname,
   ryShowOnlyIcon,
+  ryContainerAlignSelf = "center",
   ...props
 }) => {
-
-  const containerOnClick = (e: any) => {
-    if (e.target === e.currentTarget) {
-      props.onClick && props.onClick(e);
+  const containerOnClick = (event: any) => {
+    if (event.target === event.currentTarget) {
+      props.onClick && props.onClick(event);
     }
   };
 
+  ryContainerStyle = ryContainerStyle ? ryContainerStyle : {}
+
   const ButtonWithIcon = (
     <div
-      style={ryContainerStyle}
-      className={classNames([classes['container-with-icon'], props.className, ryButtonType, ryButtonSize])}
+      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
+      className={classNames([classes['container-with-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
       onClick={containerOnClick}
     >
       <div className={classes['icon-container']}>{ryIcon}</div>
-      {!ryShowOnlyIcon && <button {...props}>{ryButtonText}</button>}
+      <button {...props}>{ryButtonText}</button>
     </div>
   );
 
   const ButtonWithoutIcon = (
     <div
-      style={ryContainerStyle}
-      className={classNames([classes['container-without-icon'], props.className, ryButtonType, ryButtonSize])}
+      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
+      className={classNames([classes['container-without-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
       onClick={containerOnClick}
     >
       <button {...props}>{ryButtonText}</button>
     </div>
   );
 
-  return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+  const ButtonWithOnlyIcon = (
+    <div
+      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
+      className={classNames([classes['container-with-only-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
+      onClick={containerOnClick}
+    >
+      <div className={classes['icon-container']}>{ryIcon}</div>
+    </div>
+  )
+
+  const render = () => {
+    if (ryShowOnlyIcon) {
+      return ButtonWithOnlyIcon;
+    }
+    else {
+      return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+    }
+  }
+
+  return render();
 };
 
 export { ButtonProps, Button };

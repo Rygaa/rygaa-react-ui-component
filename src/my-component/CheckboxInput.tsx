@@ -2,8 +2,8 @@ import React from 'react';
 import classes from "./CheckboxInput.module.scss";
 import checkICON from "./check.png";
 
-interface CheckboxInputProps extends React.ButtonHTMLAttributes<HTMLInputElement> {
-  ryImage: HTMLElement;
+interface CheckboxInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  ryImage?: any;
   ryShowIcon?: boolean;
   ryIcon?: string;
 }

@@ -3,7 +3,8 @@
 .big-container {
   display: flex;
   flex-direction: column;
-  > p {
+
+  >p {
     padding: 0px;
     margin: 0px;
     @include Roboto-M16;
@@ -13,31 +14,43 @@
 }
 
 .container {
-  // min-height: 50px;
   display: flex;
   flex: 1;
-  background-color: rgb(181, 179, 182);
-  > svg path {
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px;
+  max-height: 2.5rem;
+
+  >svg path {
     fill: #686868;
   }
-  max-height: 40px;
 
-  > svg {
+  >svg {
     background-color: #eeeeee;
     padding: 0.75rem 1.25rem;
     border-right: 1px solid #eeeeee;
     width: 0.75rem;
     height: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #dedede;
+    border-right: none;
+
   }
-  box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  // &:hover {
-  //   >svg path {
-  //     fill: black;
-  //   }
-  // }
+
+  &:focus-within {
+    >input {
+      border: 1px solid rgb(204, 204, 204);
+      border-left: none;
+    }
+
+    >svg {
+      border: 1px solid rgb(204, 204, 204);
+      border-right: none;
+    }
+
+  }
+
 }
 
 .inputt {
@@ -49,22 +62,277 @@
   color: black;
   padding: 0px;
   padding-left: 10px;
-  height: 40px;
+  height: 2.5rem;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
   &::placeholder {
     @include Roboto-R16();
     color: #8e8e8e;
     text-align: left;
     transition: 0.1s;
   }
+
   &:focus-within {
     outline: none;
+
     &::placeholder {
       color: white;
     }
-    > input {
+
+    >input {
       outline: none;
     }
   }
 
-  // height: 100%;
 }
+
+
+
+
+.container-without {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px;
+  max-height: 2.5rem;
+
+  >svg path {
+    fill: #686868;
+  }
+
+  >svg {
+    background-color: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    border-right: 1px solid #eeeeee;
+    width: 0.75rem;
+    height: auto;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid #dedede;
+    border-right: none;
+
+  }
+
+  &:focus-within {
+    >input {
+      border: 1px solid rgb(204, 204, 204);
+    }
+
+    >svg {
+      border: 1px solid rgb(204, 204, 204);
+      border-right: none;
+    }
+
+  }
+
+}
+
+
+.inputt-without {
+  background-color: transparent;
+  border: none;
+  @include Roboto-R16();
+  text-align: start;
+  flex: 1;
+  color: black;
+  padding: 0px;
+  padding-left: 10px;
+  height: 2.5rem;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &::placeholder {
+    @include Roboto-R16();
+    color: #8e8e8e;
+    text-align: left;
+    transition: 0.1s;
+  }
+
+  &:focus-within {
+    outline: none;
+
+    &::placeholder {
+      color: white;
+    }
+
+    >input {
+      outline: none;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+.calendar {
+  background-color: rgb(246, 246, 246);
+  padding: .5rem;
+  box-shadow: 0px 0px 8px rgb(200, 200, 200);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  width: 25rem;
+
+  >div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    column-gap: .5rem;
+
+    >button:nth-child(3) {}
+
+    >button {
+      min-width: unset !important;
+      flex-grow: 0 !important;
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: .15rem;
+      box-sizing: border-box;
+    }
+  }
+
+  >div:nth-child(2) {
+
+    >div {
+
+      >div {
+
+        >div {
+          >div:nth-child(1) {
+            display: grid !important;
+            column-gap: .25rem;
+            grid-template-columns: repeat(7, 1fr);
+            row-gap: .25rem;
+
+            // justify-content: space-between;
+            >div {
+              flex: 0 !important;
+              width: 100%;
+              // border: 1px solid black;
+              box-sizing: border-box;
+            }
+          }
+
+          >div:nth-child(2) {
+            display: grid !important;
+            column-gap: .25rem;
+            grid-template-columns: repeat(7, 1fr);
+            row-gap: .25rem;
+
+            button {
+              flex: 0 !important;
+              border: 1px solid rgb(219, 219, 219);
+              border-radius: .15rem;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      border: 1px solid rgb(219, 219, 219);
+      border-radius: .15rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .calendar {
+//   background-color: rgb(246, 246, 246);
+//   padding: .5rem;
+//   box-shadow: 0px 0px 8px rgb(200, 200, 200);
+//   border-radius: 5px;
+//   display: flex;
+//   flex-direction: column;
+
+//   width: 700px;
+
+//   >div:nth-child(1) {
+//     display: flex;
+//     column-gap: .5rem;
+
+//     >button {
+//       border: 1px solid rgb(219, 219, 219);
+//       border-radius: .15rem;
+//       box-sizing: border-box;
+//     }
+//   }
+
+//   >div:nth-child(2) {
+
+//     >div {
+
+//       >div {
+
+//         >div {
+//           >div:nth-child(1) {
+//             display: flex;
+//             column-gap: .25rem;
+
+//             // justify-content: space-between;
+//             >div {
+//               flex: 0 !important;
+//               border: 1px solid black;
+//               box-sizing: border-box;
+//               min-width: 50px !important;
+//             }
+//           }
+
+//           >div:nth-child(2) {
+//             display: flex;
+
+//             justify-content: space-between;
+//             row-gap: .25rem;
+//             column-gap: .25rem;
+
+//             button {
+//               min-width: 50px !important;
+//               width: 50px !important;
+//               // flex: 0 !important;
+//               border: 1px solid rgb(219, 219, 219);
+//               border-radius: .15rem;
+//               box-sizing: border-box;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     button {
+//       border: 1px solid rgb(219, 219, 219);
+//       border-radius: .15rem;
+//       box-sizing: border-box;
+//     }
+//   }
+// }

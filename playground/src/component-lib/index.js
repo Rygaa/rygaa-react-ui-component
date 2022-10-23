@@ -1,7 +1,11 @@
 /* eslint-disable */
 import React from 'react';
 import classNames from 'classnames';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import { HexColorPicker } from 'react-colorful';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -68,44 +72,72 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Button-module_container-without-icon__1Ioyt{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:5px}.Button-module_container-without-icon__1Ioyt button{background-color:transparent;border:none;cursor:pointer}.Button-module_container-with-icon__pWsB0{display:grid;grid-template-columns:25% 75%;justify-content:center;align-items:center;cursor:pointer;border-radius:5px;transition:.2s;border-top-left-radius:5px;border-bottom-left-radius:5px;display:flex}.Button-module_container-with-icon__pWsB0 button{background-color:transparent;border:none;cursor:pointer;justify-content:center;padding:0}.Button-module_container-with-icon__pWsB0:hover>div:first-child{background-color:#3fc493;border-top-right-radius:50%;border-bottom-right-radius:50%}.Button-module_container-with-icon__pWsB0>div:first-child{display:flex;align-items:center;justify-content:center;align-self:center;justify-self:center;height:100%;border-top-left-radius:5px;border-bottom-left-radius:5px;transition:.2s}.Button-module_container-with-icon__pWsB0>div:first-child>svg{width:17.5px;height:17.5px}.Button-module_container-with-icon__pWsB0>div:first-child>svg path{fill:#fff}.Button-module_size1__zjn3k{width:11.5625rem;height:3.125rem}.Button-module_size1__zjn3k>button{font-size:17.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size2__2c2b8{width:9.8856rem;height:2.5rem}.Button-module_size2__2c2b8>button{font-size:15px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size3__2blMh{width:8.235rem;height:2.2256rem}.Button-module_size3__2blMh>button{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size4__3QCiz{width:6.5881rem;height:2.2256rem}.Button-module_size4__3QCiz>button{font-size:10px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_size5__Ur2OI{width:4.9413rem;height:1.3356rem}.Button-module_size5__Ur2OI>button{font-size:7.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700}.Button-module_primary__1eaan{background-color:#3ebe8e}.Button-module_primary__1eaan:hover{background-color:#45d49f}.Button-module_secondary__2Nuvd,.Button-module_secondary__2Nuvd:hover{background-color:#525252}.Button-module_danger__kunT1{background-color:#ef1d1d}.Button-module_danger__kunT1:hover{background-color:#ff2b2b}.Button-module_warning__1GDa6,.Button-module_warning__1GDa6:hover{background-color:#efc11d}.Button-module_none__2VZaQ,.Button-module_none__2VZaQ:hover{background-color:transparent}";
-var classes = {"container-without-icon":"Button-module_container-without-icon__1Ioyt","container-with-icon":"Button-module_container-with-icon__pWsB0","size1":"Button-module_size1__zjn3k","size2":"Button-module_size2__2c2b8","size3":"Button-module_size3__2blMh","size4":"Button-module_size4__3QCiz","size5":"Button-module_size5__Ur2OI","primary":"Button-module_primary__1eaan","secondary":"Button-module_secondary__2Nuvd","danger":"Button-module_danger__kunT1","warning":"Button-module_warning__1GDa6","none":"Button-module_none__2VZaQ"};
+var css_248z = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Button-module_container-without-icon__1Ioyt{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:.3125rem;width:100%;height:100%}.Button-module_container-without-icon__1Ioyt button{background-color:transparent;border:none;cursor:pointer}.Button-module_container-with-only-icon__2hfDc{display:flex}.Button-module_container-with-icon__pWsB0{display:grid;grid-template-columns:25% 65%;justify-content:center;align-items:center;cursor:pointer;border-radius:.3125rem;transition:.2s;border-top-left-radius:.3125rem;border-bottom-left-radius:.3125rem;column-gap:1rem}.Button-module_container-with-icon__pWsB0 button{background-color:transparent;border:none;cursor:pointer;padding:0}.Button-module_container-with-icon__pWsB0:hover>div:first-child{background-color:#3fc493;border-top-right-radius:50%;border-bottom-right-radius:50%}.Button-module_container-with-icon__pWsB0>div:first-child{display:flex;align-items:center;justify-content:flex-end;align-self:center;justify-self:flex-end;height:100%;border-top-left-radius:.3125rem;border-bottom-left-radius:.3125rem;transition:.2s;width:100%}.Button-module_container-with-icon__pWsB0>div:first-child>svg{width:1.0938rem;height:1.0938rem}.Button-module_container-with-icon__pWsB0>div:first-child>svg path{fill:#fff}.Button-module_size1__zjn3k{width:11.5625rem;height:3.125rem}.Button-module_size1__zjn3k>button{font-size:1.0938rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0}.Button-module_size2__2c2b8{width:9.8856rem;height:2.5rem}.Button-module_size2__2c2b8>button{font-size:.9375rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0}.Button-module_size3__2blMh{width:8.235rem;height:2.2256rem}.Button-module_size3__2blMh>button{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0}.Button-module_size4__3QCiz{width:6.5881rem;height:2.2256rem}.Button-module_size4__3QCiz>button{font-size:.625rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0}.Button-module_size5__Ur2OI{width:4.9413rem;height:1.3356rem}.Button-module_size5__Ur2OI>button{font-size:.4688rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0}.Button-module_primary__1eaan{background-color:#3ebe8e}.Button-module_primary__1eaan:hover{background-color:#45d49f}.Button-module_secondary__2Nuvd{background-color:#525252}.Button-module_secondary__2Nuvd>button{color:#fff}.Button-module_secondary__2Nuvd:hover{background-color:#525252}.Button-module_danger__kunT1{background-color:#ef1d1d}.Button-module_danger__kunT1:hover{background-color:#ff2b2b}.Button-module_warning__1GDa6,.Button-module_warning__1GDa6:hover{background-color:#efc11d}.Button-module_none__2VZaQ{background-color:transparent}.Button-module_none__2VZaQ>button{color:#525252}.Button-module_none__2VZaQ:hover{background-color:transparent}";
+var classes = {"container-without-icon":"Button-module_container-without-icon__1Ioyt","container-with-only-icon":"Button-module_container-with-only-icon__2hfDc","container-with-icon":"Button-module_container-with-icon__pWsB0","size1":"Button-module_size1__zjn3k","size2":"Button-module_size2__2c2b8","size3":"Button-module_size3__2blMh","size4":"Button-module_size4__3QCiz","size5":"Button-module_size5__Ur2OI","primary":"Button-module_primary__1eaan","secondary":"Button-module_secondary__2Nuvd","danger":"Button-module_danger__kunT1","warning":"Button-module_warning__1GDa6","none":"Button-module_none__2VZaQ"};
 styleInject(css_248z);
 
 var Button = function (_a) {
-    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon"]);
-    var containerOnClick = function (e) {
-        if (e.target === e.currentTarget) {
-            props.onClick && props.onClick(e);
+    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, _b = _a.ryContainerAlignSelf, ryContainerAlignSelf = _b === void 0 ? "center" : _b, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon", "ryContainerAlignSelf"]);
+    var containerOnClick = function (event) {
+        if (event.target === event.currentTarget) {
+            props.onClick && props.onClick(event);
         }
     };
-    var ButtonWithIcon = (React.createElement("div", { style: ryContainerStyle, className: classNames([classes['container-with-icon'], props.className, ryButtonType, ryButtonSize]), onClick: containerOnClick },
+    ryContainerStyle = ryContainerStyle ? ryContainerStyle : {};
+    var ButtonWithIcon = (React.createElement("div", { style: Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf }), className: classNames([classes['container-with-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]]), onClick: containerOnClick },
         React.createElement("div", { className: classes['icon-container'] }, ryIcon),
-        !ryShowOnlyIcon && React.createElement("button", __assign({}, props), ryButtonText)));
-    var ButtonWithoutIcon = (React.createElement("div", { style: ryContainerStyle, className: classNames([classes['container-without-icon'], props.className, ryButtonType, ryButtonSize]), onClick: containerOnClick },
         React.createElement("button", __assign({}, props), ryButtonText)));
-    return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+    var ButtonWithoutIcon = (React.createElement("div", { style: Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf }), className: classNames([classes['container-without-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]]), onClick: containerOnClick },
+        React.createElement("button", __assign({}, props), ryButtonText)));
+    var ButtonWithOnlyIcon = (React.createElement("div", { style: Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf }), className: classNames([classes['container-with-only-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]]), onClick: containerOnClick },
+        React.createElement("div", { className: classes['icon-container'] }, ryIcon)));
+    var render = function () {
+        if (ryShowOnlyIcon) {
+            return ButtonWithOnlyIcon;
+        }
+        else {
+            return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+        }
+    };
+    return render();
 };
 
-var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Input-module_big-container__3KOQx{display:flex;flex-direction:column}.Input-module_big-container__3KOQx>p{padding:0;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:500;color:#000;margin:0 0 .25rem}.Input-module_container__13V8N{display:flex;flex:1;background-color:#b5b3b6;max-height:40px;box-sizing:border-box;background:#fff;border:1px solid #dedede;border-radius:5px}.Input-module_container__13V8N>svg path{fill:#686868}.Input-module_container__13V8N>svg{background-color:#eee;padding:.75rem 1.25rem;border-right:1px solid #eee;width:.75rem;height:auto}.Input-module_inputt__2Mw5y{background-color:transparent;border:none;font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:40px}.Input-module_inputt__2Mw5y::placeholder{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;color:#8e8e8e;text-align:left;transition:.1s}.Input-module_inputt__2Mw5y:focus-within{outline:none}.Input-module_inputt__2Mw5y:focus-within::placeholder{color:#fff}.Input-module_inputt__2Mw5y:focus-within>input{outline:none}";
-var classes$1 = {"big-container":"Input-module_big-container__3KOQx","container":"Input-module_container__13V8N","inputt":"Input-module_inputt__2Mw5y"};
+var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Input-module_big-container__3KOQx{display:flex;flex-direction:column}.Input-module_big-container__3KOQx>p{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:500;padding:0;color:#000;margin:0 0 .25rem}.Input-module_container__13V8N{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem}.Input-module_container__13V8N>svg path{fill:#686868}.Input-module_container__13V8N>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:5px;border-top-left-radius:5px;border:1px solid #dedede;border-right:none}.Input-module_container__13V8N:focus-within>input{border:1px solid #ccc;border-left:none}.Input-module_container__13V8N:focus-within>svg{border:1px solid #ccc;border-right:none}.Input-module_inputt__2Mw5y{background-color:transparent;font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;margin:0;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:2.5rem;box-sizing:border-box;border:1px solid #dedede;border-left:none;border-top-right-radius:5px;border-bottom-right-radius:5px}.Input-module_inputt__2Mw5y::placeholder{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;margin:0;padding:0;color:#000;color:#8e8e8e;text-align:left;transition:.1s}.Input-module_inputt__2Mw5y:focus-within{outline:none}.Input-module_inputt__2Mw5y:focus-within::placeholder{color:#fff}.Input-module_inputt__2Mw5y:focus-within>input{outline:none}.Input-module_container-without__EJAZ5{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem}.Input-module_container-without__EJAZ5>svg path{fill:#686868}.Input-module_container-without__EJAZ5>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:5px;border-top-left-radius:5px;border:1px solid #dedede;border-right:none}.Input-module_container-without__EJAZ5:focus-within>input{border:1px solid #ccc}.Input-module_container-without__EJAZ5:focus-within>svg{border:1px solid #ccc;border-right:none}.Input-module_inputt-without__-DYQ_{background-color:transparent;font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;margin:0;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:2.5rem;border:1px solid #dedede;box-sizing:border-box;border-radius:5px}.Input-module_inputt-without__-DYQ_::placeholder{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;margin:0;padding:0;color:#000;color:#8e8e8e;text-align:left;transition:.1s}.Input-module_inputt-without__-DYQ_:focus-within{outline:none}.Input-module_inputt-without__-DYQ_:focus-within::placeholder{color:#fff}.Input-module_inputt-without__-DYQ_:focus-within>input{outline:none}.Input-module_calendar__ab0od{background-color:#f6f6f6;padding:.5rem;box-shadow:0 0 8px #c8c8c8;border-radius:5px;display:flex;flex-direction:column;width:25rem}.Input-module_calendar__ab0od>div:first-child{display:grid;grid-template-columns:1fr 1fr 4fr 1fr 1fr;column-gap:.5rem}.Input-module_calendar__ab0od>div:first-child>button{min-width:unset!important;flex-grow:0!important;border:1px solid #dbdbdb;border-radius:.15rem;box-sizing:border-box}.Input-module_calendar__ab0od>div:nth-child(2)>div>div>div>div:first-child{display:grid!important;column-gap:.25rem;grid-template-columns:repeat(7,1fr);row-gap:.25rem}.Input-module_calendar__ab0od>div:nth-child(2)>div>div>div>div:first-child>div{flex:0!important;width:100%;box-sizing:border-box}.Input-module_calendar__ab0od>div:nth-child(2)>div>div>div>div:nth-child(2){display:grid!important;column-gap:.25rem;grid-template-columns:repeat(7,1fr);row-gap:.25rem}.Input-module_calendar__ab0od>div:nth-child(2)>div>div>div>div:nth-child(2) button{flex:0!important;border:1px solid #dbdbdb;border-radius:.15rem;box-sizing:border-box}.Input-module_calendar__ab0od>div:nth-child(2) button{border:1px solid #dbdbdb;border-radius:.15rem;box-sizing:border-box}";
+var classes$1 = {"big-container":"Input-module_big-container__3KOQx","container":"Input-module_container__13V8N","inputt":"Input-module_inputt__2Mw5y","container-without":"Input-module_container-without__EJAZ5","inputt-without":"Input-module_inputt-without__-DYQ_","calendar":"Input-module_calendar__ab0od"};
 styleInject(css_248z$1);
 
 var Input = function (_a) {
-    var ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
-    var c1 = (React.createElement("div", { className: classes$1['container'] },
-        ryImage,
-        React.createElement("input", __assign({ className: classes$1['inputt'] }, props))));
-    var c2 = (React.createElement("div", { className: classes$1['container'] },
-        React.createElement("input", __assign({ className: classes$1['inputt'] }, props))));
+    var ryShowIcon = _a.ryShowIcon, ryType = _a.ryType, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryShowIcon", "ryType", "ryLabel", "ryIcon", "ryImage"]);
+    var _b = React.useState(false), open = _b[0], setOpen = _b[1];
+    var _c = React.useState(new Date()), value = _c[0], setValue = _c[1];
+    function x() {
+        if (ryType == "calendar") {
+            if (props.onChange && props.value) {
+                return React.createElement("div", null,
+                    open && React.createElement(Calendar, { className: classes$1['calendar'], onChange: function (e) { console.log(e); }, value: value }),
+                    React.createElement("button", { onClick: function () { return setOpen(!open); } }, "Open Calendar"));
+            }
+        }
+        else {
+            return React.createElement("input", __assign({ className: ryImage ? classes$1['inputt'] : classes$1['inputt-without'] }, props));
+        }
+    }
+    // React.useEffect(() => {
+    //   if (props.onChange) {
+    //     console.log(value)
+    //     // props.onChange(value)
+    //   }
+    // }, [value])
     return (React.createElement("div", { className: classes$1['big-container'] },
-        ryLabel && (React.createElement("p", null, ryLabel)),
-        React.createElement("div", { className: classes$1['container'] },
+        ryLabel && (React.createElement("p", null,
+            ryLabel,
+            "aissa11")),
+        React.createElement("div", { className: ryImage ? classes$1['container'] : classes$1['container-without'] },
             ryImage,
-            React.createElement("input", __assign({ className: classes$1['inputt'] }, props)))));
+            x())));
 };
 
-var css_248z$2 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Page-module_container__Lvach{display:grid;grid-template-rows:7.5vh 92.5vh;row-gap:1rem;margin-left:1.5rem;height:100%;column-gap:1rem;margin-bottom:1rem;margin-right:2rem;flex:1}.Page-module_container__Lvach>p:first-child{font-size:32.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Raleway;font-style:normal;font-weight:700;color:#464646;grid-row:1/2;border-bottom:1px solid #464646;margin:0;padding:0}.Page-module_main1__1Hw0m{display:flex;margin-bottom:2rem;column-gap:2rem;width:100%}.Page-module_main1__1Hw0m>aside{display:flex;flex-direction:column;background:#fff;box-shadow:0 0 4px rgba(0,0,0,.25);padding:1.25rem 2rem;width:20%}.Page-module_main1__1Hw0m>main{display:flex;flex-direction:column;flex:1;width:100%}";
+var css_248z$2 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Page-module_container__Lvach{display:grid;grid-template-rows:7.5% 92.5%;row-gap:1rem;margin-left:1.5rem;height:100%;column-gap:1rem;margin-bottom:1rem;margin-right:2rem;flex:1}.Page-module_container__Lvach>p:first-child{font-size:2.0313rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:700;color:#464646;grid-row:1/2;border-bottom:1px solid #464646;margin:0;padding:0}.Page-module_main1__1Hw0m{display:flex;margin-bottom:2rem;column-gap:2rem;width:100%}.Page-module_main1__1Hw0m>aside{display:flex;flex-direction:column;background:#fff;box-shadow:0 0 4px rgba(0,0,0,.25);padding:1.25rem 2rem;width:20%}.Page-module_main1__1Hw0m>main{display:flex;flex-direction:column;flex:1;width:100%}";
 var classes$2 = {"container":"Page-module_container__Lvach","main1":"Page-module_main1__1Hw0m"};
 styleInject(css_248z$2);
 
@@ -116,7 +148,7 @@ var Page = function (_a) {
         React.createElement("div", { className: classes$2['main1'] }, props.children)));
 };
 
-var css_248z$3 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.CheckboxInput-module_Checkbox__BPvqk{display:flex;justify-content:center;align-self:center;align-items:center;width:20px!important;height:20px!important;border:1px solid #dedede;box-sizing:border-box;border-radius:5px;margin-right:.5rem}.CheckboxInput-module_Checkbox__BPvqk>img{width:.938rem;height:.938rem}.CheckboxInput-module_container__2Bzgv{display:flex;cursor:pointer;width:fit-content}.CheckboxInput-module_container__2Bzgv p{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;align-self:center;color:#646464;margin:0;padding:0}";
+var css_248z$3 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.CheckboxInput-module_Checkbox__BPvqk{display:flex;justify-content:center;align-self:center;align-items:center;width:1.25rem!important;height:1.25rem!important;border:1px solid #dedede;box-sizing:border-box;border-radius:.3125rem;margin-right:.5rem}.CheckboxInput-module_Checkbox__BPvqk>img{width:.938rem;height:.938rem}.CheckboxInput-module_container__2Bzgv{display:flex;cursor:pointer;width:fit-content}.CheckboxInput-module_container__2Bzgv p{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;color:#000;align-self:center;color:#646464;margin:0;padding:0}";
 var classes$3 = {"Checkbox":"CheckboxInput-module_Checkbox__BPvqk","container":"CheckboxInput-module_container__2Bzgv"};
 styleInject(css_248z$3);
 
@@ -155,18 +187,24 @@ var ColorInput = function (_a) {
 };
 
 var FileInput = function (_a) {
-    var ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryColor", "ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
     //  const inputRef: React.Ref = React.useRef(null) ;
-    var inputRef = React.useRef(null);
+    // const inputRef = React.useRef<HTMLInputElement>(null);
+    var ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryColor", "ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
     return (React.createElement("div", { className: classes$1["file-input-component"], style: props.style },
         ryLabel && (React.createElement("p", { className: classes$1["label-file-input"] }, ryLabel)),
         React.createElement("div", { className: classes$1["container-file-input"] },
             React.createElement("img", { onClick: function () {
-                    if (inputRef && inputRef.current) {
-                        inputRef.current.click();
+                    // if (inputRef && inputRef.current) {
+                    // inputRef.current.click();
+                    var elem = document.getElementById("lol");
+                    if (elem !== null) {
+                        elem.click();
                     }
+                    // }
                 }, src: ryImage }),
-            React.createElement("input", { ref: inputRef, style: { display: "none" }, onChange: function (e) {
+            React.createElement("input", { id: "lol", 
+                // ref={inputRef}
+                style: { display: "none" }, onChange: function (e) {
                     // props.onChange(inputRef.current.files[0])
                     if (props.onChange) {
                         props.onChange(e);
@@ -174,7 +212,7 @@ var FileInput = function (_a) {
                 }, type: "file" }))));
 };
 
-var css_248z$4 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");.Select-module_big-container__2OPTp{display:flex;flex-direction:column}.Select-module_big-container__2OPTp>p{padding:0;font-weight:500;margin:0 0 .25rem}.Select-module_big-container__2OPTp>p,.Select-module_select__OLjiA{font-size:12.5px;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;color:#000}.Select-module_select__OLjiA{border-radius:5px;border:1px solid #d7d7d7;padding:0 1rem;font-weight:400;text-align:left;height:100%}.Select-module_select__OLjiA:focus-within{outline:none}";
+var css_248z$4 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Select-module_big-container__2OPTp{display:flex;flex-direction:column}.Select-module_big-container__2OPTp>p{font-weight:500;margin:0 0 .25rem}.Select-module_big-container__2OPTp>p,.Select-module_select__OLjiA{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;padding:0;color:#000}.Select-module_select__OLjiA{border-radius:5px;border:1px solid #d7d7d7;font-weight:400;margin:0;text-align:left;height:100%}.Select-module_select__OLjiA:focus-within{outline:none}";
 var classes$4 = {"big-container":"Select-module_big-container__2OPTp","select":"Select-module_select__OLjiA"};
 styleInject(css_248z$4);
 
@@ -214,4 +252,25 @@ var Modal = function (_a) {
         React.createElement("div", { onClick: function () { console.log('rrr'); ryClose(); } }))) : null;
 };
 
-export { Button, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };
+var css_248z$6 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.CalendarInput-module_big-container__2borq{display:flex;flex-direction:column;width:min-content}.CalendarInput-module_big-container__2borq>p{font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:500;padding:0;color:#000;margin:0 0 .25rem}.CalendarInput-module_container__125fg{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem;background-color:transparent;border:none}.CalendarInput-module_container__125fg>svg path{fill:#686868}.CalendarInput-module_container__125fg>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:5px;border-top-left-radius:5px;border:1px solid #dedede;border-right:none}.CalendarInput-module_container__125fg:focus-within>input{border:1px solid #ccc;border-left:none}.CalendarInput-module_container__125fg:focus-within>svg{border:1px solid #ccc;border-right:none}.CalendarInput-module_container-without__1IXSK{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem}.CalendarInput-module_container-without__1IXSK>svg path{fill:#686868}.CalendarInput-module_container-without__1IXSK>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:5px;border-top-left-radius:5px;border:1px solid #dedede;border-right:none}.CalendarInput-module_container-without__1IXSK:focus-within>input{border:1px solid #ccc}.CalendarInput-module_container-without__1IXSK:focus-within>svg{border:1px solid #ccc;border-right:none}.CalendarInput-module_datepicker-input__3VdrV{background-color:transparent;font-size:.7813rem;display:flex;align-items:center;text-align:center;color:#fff;font-family:Roboto;font-style:normal;font-weight:400;margin:0;text-align:start;flex:1;color:#000;padding:0 0 0 10px;height:2.5rem;box-sizing:border-box;border-top-right-radius:5px;border-bottom-right-radius:5px;border:1px solid #dedede;border-left:none}.CalendarInput-module_datepicker-input__3VdrV:focus-within{outline:none;border:1px solid #ccc;border-left:none}.CalendarInput-module_test01__xJSzN{box-shadow:0 0 8px rgba(0,0,0,.25)}";
+var classes$6 = {"big-container":"CalendarInput-module_big-container__2borq","container":"CalendarInput-module_container__125fg","container-without":"CalendarInput-module_container-without__1IXSK","datepicker-input":"CalendarInput-module_datepicker-input__3VdrV","test01":"CalendarInput-module_test01__xJSzN"};
+styleInject(css_248z$6);
+
+var CalendarInput = function (_a) {
+    var ryShowIcon = _a.ryShowIcon, ryDateOnChange = _a.ryDateOnChange, ryDateValue = _a.ryDateValue, ryType = _a.ryType, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryShowIcon", "ryDateOnChange", "ryDateValue", "ryType", "ryLabel", "ryIcon", "ryImage"]);
+    var _b = React.useState(false), open = _b[0], setOpen = _b[1];
+    var _c = React.useState(new Date()), value = _c[0], setValue = _c[1];
+    // React.useEffect(() => {
+    //   if (props.onChange) {
+    //     console.log(value)
+    //     // props.onChange(value)
+    //   }
+    // }, [value])
+    return (React.createElement("div", { className: classes$6['big-container'] },
+        ryLabel && (React.createElement("p", null, ryLabel)),
+        React.createElement("div", { className: ryImage ? classes$6['container'] : classes$6['container-without'] },
+            ryImage,
+            React.createElement(DatePicker, { className: classes$6['datepicker-input'], calendarClassName: classes$6['test01'], onChange: function (e) { console.log(e); }, selected: value }))));
+};
+
+export { Button, CalendarInput, CheckboxInput, ColorInput, Dropdown, FileInput, Input, Modal, Page, Select };

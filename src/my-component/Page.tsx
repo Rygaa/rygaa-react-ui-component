@@ -3,8 +3,8 @@ import classes from "./Page.module.scss";
 
 interface PageProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
   ryTitle: string,
-  ryAside: HTMLElement,
-  ryPrincipal: HTMLElement
+  ryAside?: HTMLElement,
+  ryPrincipal?: HTMLElement
 }
 
 const Page: React.FC<PageProps> = ({ ryTitle, ryAside, ryPrincipal, ...props }) => {
@@ -12,7 +12,7 @@ const Page: React.FC<PageProps> = ({ ryTitle, ryAside, ryPrincipal, ...props }) 
     <div className={classes['container']}>
       <p>{ryTitle}</p>
       <div className={classes['main1']}>
-          {props.children}
+        {props.children}
       </div>
     </div>
   );
