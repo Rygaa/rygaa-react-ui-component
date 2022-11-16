@@ -4,6 +4,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     ryButtonType: any;
     ryButtonSize: any;
     ryIcon?: any;
+    ryIconSize?: any;
     ryContainerStyle?: Object;
     ryContainerClassname?: any;
     ryShowOnlyIcon?: boolean;

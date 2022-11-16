@@ -1,0 +1,32 @@
+@import '../helpers/fonts.module.scss';
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+
+  >p {
+    padding: 0px;
+    margin: 0px;
+    @include Roboto-B15;
+    color: black;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.select {
+  padding: 0rem 1rem;
+  @include Roboto-R16();
+  color: black;
+  text-align: left;
+  min-height: 3.125rem;
+  height: 3.125rem;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2.5px;
+  border: 1px solid var(--border-input-normal);
+  background-color: var(--background-color-input-normal);
+  padding-left: 10px;
+  &:focus-within {
+    outline: none;
+  }
+}

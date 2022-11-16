@@ -1,5 +1,5 @@
 import React from 'react';
-interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
+interface ImageInputProps extends React.HTMLAttributes<HTMLElement> {
     ryImage: string;
     ryShowIcon?: boolean;
     ryIcon?: string;
@@ -8,5 +8,5 @@ interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
     ryExistingFile?: string;
     ryLink?: string;
 }
-declare const FileInput: React.FC<FileInputProps>;
-export { FileInputProps, FileInput };
+declare const ImageInput: React.FC<ImageInputProps>;
+export { ImageInputProps, ImageInput };

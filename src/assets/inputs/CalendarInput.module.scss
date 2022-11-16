@@ -1,0 +1,110 @@
+@import '../helpers/fonts.module.scss';
+
+.ry-root-calendarinput {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  flex: 1;
+
+  .ry-label-calendarinput {
+    padding: 0px;
+    margin: 0px;
+    @include Roboto-B15;
+    color: black;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.ry-container-with-image-calendarinput {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2.5px;
+  border: 1px solid var(--border-input-normal);
+  background-color: var(--background-color-input-normal);
+
+  min-height: 3.125rem;
+  // border-bottom: 1px solid var(--custom-color1);
+  // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.125);
+  // border-bottom: 1px solid var(--custom-color1);
+
+  > svg {
+    padding: 0.75rem 1.25rem;
+    width: 0.75rem;
+    height: auto;
+    border-bottom-left-radius: 2.5px;
+    border-top-left-radius: 2.5px;
+    height: unset !important;
+    // background-color: var(--custom-color2);
+    > path {
+      fill: var(--fill-input-normal);
+    }
+  }
+}
+
+.ry-day-select-calendarinput {
+  background-color: transparent;
+  border: none;
+  @include Roboto-R16();
+  text-align: start;
+  flex: 1;
+  color: black;
+  padding: 0px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-left: none;
+  flex: 1;
+  // border-left: 1px solid black;
+}
+
+.ry-month-select-calendarinput {
+  background-color: transparent;
+  border: none;
+  @include Roboto-R16();
+  text-align: start;
+  flex: 1;
+  color: black;
+  padding: 0px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-left: none;
+  flex: 2;
+  // border-left: 1px solid black;
+
+}
+
+.ry-container-without-image-calendarinput {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 5px;
+  max-height: 2.5rem;
+  height: 3.125rem;
+  > svg path {
+    fill: #686868;
+  }
+
+  > svg {
+    background-color: #eeeeee;
+    padding: 0.75rem 1.25rem;
+    border-right: 1px solid #eeeeee;
+    width: 0.75rem;
+    height: auto;
+    border: 1px solid #dedede;
+    border-right: none;
+  }
+
+  &:focus-within {
+    > input {
+      border: 1px solid rgb(204, 204, 204);
+    }
+
+    > svg {
+      border: 1px solid rgb(204, 204, 204);
+      border-right: none;
+    }
+  }
+}

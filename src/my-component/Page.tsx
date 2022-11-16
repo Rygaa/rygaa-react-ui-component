@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./Page.module.scss";
+import classes from "../assets/inputs/Page.module.scss";
 
 interface PageProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
   ryTitle: string,

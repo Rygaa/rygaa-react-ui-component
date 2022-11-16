@@ -8,6 +8,8 @@ import { Select } from './my-component/Select';
 import { Dropdown } from './my-component/Dropdown';
 import { Modal } from './my-component/Modal';
 import { CalendarInput } from './my-component/CalendarInput';
+import { InputWithImage } from './my-component/InputWithImage';
+import { ImageInput } from './my-component/ImageInput';
 
 
 
@@ -22,4 +24,6 @@ export {
   Dropdown,
   Modal,
   CalendarInput,
+  InputWithImage,
+  ImageInput
 };

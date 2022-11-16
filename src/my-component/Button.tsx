@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Button.module.scss';
+import classes from '../assets/buttons/Button.module.scss';
 import classNames from 'classnames';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryButtonType: any;
   ryButtonSize: any;
   ryIcon?: any;
+  ryIconSize?: any;
   ryContainerStyle?: Object;
   ryContainerClassname?: any;
   ryShowOnlyIcon?: boolean;
@@ -21,10 +22,18 @@ const Button: React.FC<ButtonProps> = ({
   ryContainerStyle,
   ryContainerClassname,
   ryShowOnlyIcon,
+  ryIconSize,
   ryContainerAlignSelf = "center",
   ...props
 }) => {
   const containerOnClick = (event: any) => {
+    console.log(event)
+    // if (event.target === event.currentTarget) {
+    props.onClick && props.onClick(event);
+    // }
+  };
+
+  const containerOnClick1 = (event: any) => {
     if (event.target === event.currentTarget) {
       props.onClick && props.onClick(event);
     }
@@ -36,9 +45,9 @@ const Button: React.FC<ButtonProps> = ({
     <div
       style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
       className={classNames([classes['container-with-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
-      onClick={containerOnClick}
+      onClick={containerOnClick1}
     >
-      <div className={classes['icon-container']}>{ryIcon}</div>
+      {ryIcon}
       <button {...props}>{ryButtonText}</button>
     </div>
   );
@@ -47,7 +56,7 @@ const Button: React.FC<ButtonProps> = ({
     <div
       style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
       className={classNames([classes['container-without-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
-      onClick={containerOnClick}
+      onClick={containerOnClick1}
     >
       <button {...props}>{ryButtonText}</button>
     </div>
@@ -59,7 +68,7 @@ const Button: React.FC<ButtonProps> = ({
       className={classNames([classes['container-with-only-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
       onClick={containerOnClick}
     >
-      <div className={classes['icon-container']}>{ryIcon}</div>
+      {ryIcon}
     </div>
   )
 

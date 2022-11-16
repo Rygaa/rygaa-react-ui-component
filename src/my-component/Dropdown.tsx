@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Dropdown.module.scss';
+import classes from '../assets/buttons/Dropdown.module.scss';
 
 interface DropdownProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
   ryText: string;

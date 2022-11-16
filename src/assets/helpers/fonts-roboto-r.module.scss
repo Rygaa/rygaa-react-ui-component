@@ -1,110 +1,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@mixin Raleway-R {
+@mixin Roboto-R {
   display: flex;
   align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-  font-family: "Raleway";
+  color: var(--custom-color1);
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: black;
 }
 
-@mixin Raleway-R1 {
+@mixin Roboto-R1 {
   font-size: 3.125rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R2 {
+@mixin Roboto-R2 {
   font-size: 2.9688rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R3 {
+@mixin Roboto-R3 {
   font-size: 2.8125rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R4 {
+@mixin Roboto-R4 {
   font-size: 2.6563rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R5 {
+@mixin Roboto-R5 {
   font-size: 2.5rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R6 {
+@mixin Roboto-R6 {
   font-size: 2.3438rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R7 {
+@mixin Roboto-R7 {
   font-size: 2.1875rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R8 {
+@mixin Roboto-R8 {
   font-size: 2.0313rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R9 {
+@mixin Roboto-R9 {
   font-size: 1.875rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R10 {
+@mixin Roboto-R10 {
   font-size: 1.7188rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R11 {
+@mixin Roboto-R11 {
   font-size: 1.5625rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R12 {
+@mixin Roboto-R12 {
   font-size: 1.4063rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R13 {
+@mixin Roboto-R13 {
   font-size: 1.25rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R14 {
+@mixin Roboto-R14 {
   font-size: 1.0938rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R15 {
+@mixin Roboto-R15 {
   font-size: 0.9375rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R16 {
+@mixin Roboto-R16 {
   font-size: 0.7813rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R17 {
+@mixin Roboto-R17 {
   font-size: 0.625rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R18 {
+@mixin Roboto-R18 {
   font-size: 0.4688rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }
 
-@mixin Raleway-R19 {
+@mixin Roboto-R19 {
   font-size: 0.3125rem;
-  @include Raleway-R();
+  @include Roboto-R();
 }

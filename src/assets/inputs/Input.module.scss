@@ -1,0 +1,43 @@
+@import '../helpers/fonts.module.scss';
+
+.ry-root-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.ry-label-input {
+  padding: 0px;
+  margin: 0px;
+  @include Roboto-B15;
+  color: var(--color-input-normal);
+  margin-bottom: 0.25rem;
+}
+
+.ry-input-without-image {
+  @include Roboto-R15();
+  display: flex;
+  min-height: 3.125rem;
+  border: 1px solid var(--border-input-normal);
+  background-color: var(--background-color-input-normal);
+  border-radius: 2.5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+
+  &::placeholder {
+    @include Roboto-R15();
+    color: #8e8e8e;
+    transition: 0.1s;
+  }
+
+  &:focus-within {
+    outline: none;
+
+    &::placeholder {
+      color: white;
+    }
+
+    > input {
+      outline: none;
+    }
+  }
+}

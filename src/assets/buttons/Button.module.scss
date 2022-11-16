@@ -1,4 +1,4 @@
-@import '../assets/fonts.module.scss';
+@import '../helpers/fonts.module.scss';
 
 $container-background-color-01: #3ebe8e;
 $container-background-color-02: #525252;
@@ -24,6 +24,7 @@ $icon-color-03__hover: #ff2b2b;
 $icon-color-04__hover: #efc11d;
 $icon-color-05__hover: transparent;
 
+
 @mixin container-size-01() {
   width: 11.5625rem;
   height: 3.125rem;
@@ -44,49 +45,40 @@ $icon-color-05__hover: transparent;
   height: 2.2256rem;
 }
 
-@mixin container-size-05() {
-  width: 4.9413rem;
-  height: 1.3356rem;
-}
-
 @mixin container-font-size-01() {
-  >button {
+  > button {
     @include Roboto-B14();
+    color: var(--custom-color2);
   }
 }
 
 @mixin container-font-size-02() {
-  >button {
+  > button {
     @include Roboto-B15();
+    color: var(--custom-color2);
   }
 }
 
 @mixin container-font-size-03() {
-  >button {
+  > button {
     @include Roboto-B16();
+    color: var(--custom-color2);
   }
 }
 
 @mixin container-font-size-04() {
-  >button {
+  > button {
     @include Roboto-B17();
+    color: var(--custom-color2);
   }
 }
-
-@mixin container-font-size-05() {
-  >button {
-    @include Roboto-B18();
-  }
-}
-
 
 .container-without-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 0.3125rem;
-  // transition: 0.2s;
+  border-radius: 0.1563rem;
   width: 100%;
   height: 100%;
 
@@ -94,12 +86,14 @@ $icon-color-05__hover: transparent;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    // transition: 0.2s;
   }
 }
 
 .container-with-only-icon {
   display: flex;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
 }
 
 .container-with-icon {
@@ -109,49 +103,34 @@ $icon-color-05__hover: transparent;
   align-items: center;
 
   cursor: pointer;
-  border-radius: 0.3125rem;
+  border-radius: 0.1563rem;
   transition: 0.2s;
-  border-top-left-radius: 0.3125rem;
-  border-bottom-left-radius: 0.3125rem;
+  border-top-left-radius: 0.1563rem;
+  border-bottom-left-radius: 0.1563rem;
   column-gap: 1rem;
 
   button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    // transition: 0.2s;
     padding: 0px;
   }
 
   &:hover {
-    >div:nth-child(1) {
+    > div:nth-child(1) {
       background-color: $icon-color-01__hover;
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
     }
   }
 
-  >div:nth-child(1) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    align-self: center;
-    justify-self: flex-end;
-    height: 100%;
-    border-top-left-radius: 0.3125rem;
-    border-bottom-left-radius: 0.3125rem;
-    transition: 0.2s;
-    width: 100%;
+  > svg {
+    width: 1.0938rem;
+    height: 1.0938rem;
+  }
 
-    >svg {
-      width: 1.0938rem;
-      height: 1.0938rem;
-
-    }
-
-    >svg path {
-      fill: white;
-    }
+  > svg path {
+    fill: white;
   }
 }
 
@@ -176,50 +155,47 @@ $icon-color-05__hover: transparent;
 }
 
 .size5 {
-  @include container-size-05();
-  @include container-font-size-05();
+  width: 100% !important;
+  height: 3.125rem !important;
+  @include container-font-size-01();
 }
 
 .primary {
-  background-color: $container-background-color-01;
+  background-color: var(--background-color-primarybutton-normal);
 
-  &:hover {
-    background-color: $container-background-color-01__hover;
+  > button {
+    color: var(--color-primarybutton-normal);
   }
 }
 
 .secondary {
-  background-color: $container-background-color-02;
+  background-color: var(--background-color-secondarybutton-normal);
 
-  >button {
-    color: white;
-  }
-
-  &:hover {
-    background-color: $container-background-color-02__hover;
+  > button {
+    color: var(--color-secondarybutton-normal);
   }
 }
 
 .danger {
-  background-color: $container-background-color-03;
+  background-color: var(--background-color-dangerbutton-normal);
 
-  &:hover {
-    background-color: $container-background-color-03__hover;
+  > button {
+    color: var(--color-dangerbutton-normal);
   }
 }
 
 .warning {
-  background-color: $container-background-color-04;
+  background-color: var(--background-color-warningbutton-normal);
 
-  &:hover {
-    background-color: $container-background-color-04__hover;
+  > button {
+    color: var(--color-warningbutton-normal);
   }
 }
 
 .none {
   background-color: $container-background-color-05;
 
-  >button {
+  > button {
     color: rgb(82, 82, 82);
   }
 

@@ -4,13 +4,12 @@
 @mixin Roboto-M {
   display: flex;
   align-items: center;
-  text-align: center;
-  color: #FFFFFF;
+  color: var(--custom-color1);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin Roboto-M1 {

@@ -1,0 +1,74 @@
+@import '../helpers/fonts.module.scss';
+
+
+.file-input-component {
+
+
+
+}
+
+.label-file-input {}
+
+.container-file-input {
+  display: flex;
+
+
+  img {
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px .5px black;
+    width: 15rem;
+    border-radius: 4px;
+
+    &:hover {}
+  }
+}
+
+
+
+.ry-root-fileinput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: 1rem 0rem;
+  cursor: pointer;
+}
+
+.ry-label-fileinput {
+  @include Roboto-B15;
+  margin-bottom: 0.25rem;
+}
+
+.ry-container-fileinput {
+  display: flex;
+  flex-direction: row;
+  column-gap: .5rem;
+  > button {
+    min-height: 3.125rem;
+    border: 1px solid var(--border-primarybutton-normal);
+    background-color: var(--background-color-primarybutton-normal);
+    border-radius: 2.5px;
+    box-sizing: border-box;
+    @include Roboto-M15;
+    color: var(--color-primarybutton-normal);
+    justify-content: center;
+    flex: 1;
+  }
+  > a {
+    min-height: 3.125rem;
+    border: 1px solid var(--border-secondarybutton-normal);
+    background-color: var(--background-color-secondarybutton-normal);
+    border-radius: 2.5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    @include Roboto-R16;
+    color: var(--color-secondarybutton-normal);
+
+    justify-content: center;
+    flex: 1;
+
+    > span {
+      @include Roboto-M15;
+    }
+  }
+}

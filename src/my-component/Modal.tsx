@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Modal.module.scss';
+import classes from '../assets/inputs/Modal.module.scss';
 
 interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
   ryImage: HTMLElement;

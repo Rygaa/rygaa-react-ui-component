@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Select.module.scss';
+import classes from '../assets/inputs/Select.module.scss';
 
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   ryText: string;

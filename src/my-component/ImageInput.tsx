@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from '../assets/inputs/FileInput.module.scss';
+import classes from '../assets/inputs/Input.module.scss';
 
-interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
+interface ImageInputProps extends React.HTMLAttributes<HTMLElement> {
   ryImage: string;
   ryShowIcon?: boolean;
   ryIcon?: string;
@@ -11,7 +11,7 @@ interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
   ryLink?: string;
 }
 
-const FileInput: React.FC<FileInputProps> = ({
+const ImageInput: React.FC<ImageInputProps> = ({
   ryLink,
   ryExistingFile,
   ryColor,
@@ -21,25 +21,23 @@ const FileInput: React.FC<FileInputProps> = ({
   ryImage,
   ...props
 }) => {
-  //  const inputRef: React.Ref = React.useRef(null) ;
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   return (
-    <div className={classes['ry-root-fileinput']} style={props.style}>
-      {ryLabel && <p className={classes['ry-label-fileinput']}>{ryLabel}</p>}
+    <div className={classes['file-input-component']} style={props.style}>
+      {ryLabel && <p className={classes['label-file-input']}>{ryLabel}</p>}
 
-      <div className={classes['ry-container-fileinput']}>
-        <button
+      <div className={classes['container-file-input']}>
+        <img
           onClick={() => {
             if (inputRef && inputRef.current) {
               inputRef.current.click();
             }
           }}
+          src={ryImage}
         >
-          Upload File
-        </button>
-        {ryExistingFile !== "No file" && <a href={ryLink}><span>Download&nbsp;</span>{ryExistingFile}</a>}
-
+          {ryExistingFile}
+        </img>
         <input
           ref={inputRef}
           style={{ display: 'none' }}
@@ -56,4 +54,4 @@ const FileInput: React.FC<FileInputProps> = ({
   );
 };
 
-export { FileInputProps, FileInput };
+export { ImageInputProps, ImageInput };

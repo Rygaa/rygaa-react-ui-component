@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-calendar/dist/Calendar.css';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     ryImage: any;
     ryShowIcon?: boolean;

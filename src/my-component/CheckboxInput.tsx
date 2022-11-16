@@ -1,25 +1,24 @@
 import React from 'react';
-import classes from "./CheckboxInput.module.scss";
-import checkICON from "./check.png";
+import classes from '../assets/inputs/CheckboxInput.module.scss';
+import checkICON from './check.png';
 
-interface CheckboxInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface CheckboxInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   ryImage?: any;
   ryShowIcon?: boolean;
   ryIcon?: string;
+  ryText?: string;
 }
 
-const CheckboxInput: React.FC<CheckboxInputProps> = ({ ryShowIcon, ryIcon, ryImage, ...props }) => {
+const CheckboxInput: React.FC<CheckboxInputProps> = props => {
   return (
-    <div className={classes["container"]} {...props}>
-      <div
-        className={classes["Checkbox"]}
-      >
+    <div className={classes['ry-root-checkboxinputt']} {...props}>
+      <div className={classes['ry-box-checkboxinputt']}>
         {props.value ? <img src={checkICON} /> : null}
       </div>
-      {props.children}
+      <p className={classes['ry-text-checkboxinputt']}>{props.ryText}</p>
     </div>
   );
 };
-
 
 export { CheckboxInputProps, CheckboxInput };
