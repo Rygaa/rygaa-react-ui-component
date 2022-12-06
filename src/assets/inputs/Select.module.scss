@@ -3,8 +3,13 @@
 .big-container {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  border: none;
+  background-color: var(--select-type-a-with-icon-color-1);
+  border-bottom: 1px solid var(--select-type-a-with-icon-color-2);
+  color: var(--select-type-a-with-icon-color-3);
 
-  >p {
+  > p {
     padding: 0px;
     margin: 0px;
     @include Roboto-B15;
@@ -13,20 +18,156 @@
   }
 }
 
+// .select {
+//   padding: 0rem 1rem;
+//   @include Roboto-R16();
+//   text-align: left;
+//   min-height: 3.125rem;
+//   height: 3.125rem;
+//   border: none;
+//   box-sizing: border-box;
+//   border-radius: 2.5px;
+
+//   padding-left: 10px;
+//   border-top: none;
+//   border-right: none;
+//   border-left: none;
+
+//   option {
+//     // background-color: red;
+//     box-shadow: 0px 0px 0px 4px black;
+//     margin: 0.5rem 0.5rem;
+//   }
+
+//   &:focus-within {
+//     outline: none;
+//   }
+// }
+
 .select {
-  padding: 0rem 1rem;
-  @include Roboto-R16();
-  color: black;
-  text-align: left;
-  min-height: 3.125rem;
-  height: 3.125rem;
-  border: none;
-  box-sizing: border-box;
-  border-radius: 2.5px;
-  border: 1px solid var(--border-input-normal);
-  background-color: var(--background-color-input-normal);
-  padding-left: 10px;
+  align-self: flex-end;
+
+  // arrow
+  &:hover {
+    [class$='indicatorContainer'] {
+      color: var(--select-type-a-with-icon-color-6);
+    }
+    [class$='indicatorSeparator'] {
+      background-color: var(--select-type-a-with-icon-color-6);
+    }
+  }
   &:focus-within {
-    outline: none;
+    [class$='indicatorContainer'] {
+      color: var(--select-type-a-with-icon-color-6);
+    }
+    [class$='indicatorSeparator'] {
+      background-color: var(--select-type-a-with-icon-color-6);
+    }
+  }
+  [class$='-control'] {
+    border: none;
+    background-color: var(--select-type-a-with-icon-color-1);
+    border-bottom: 1px solid var(--select-type-a-with-icon-color-2);
+    color: var(--select-type-a-with-icon-color-3);
+    box-sizing: border-box;
+    &:focus-within {
+      outline: none;
+      border: none;
+      box-shadow: unset;
+      border-bottom: 1px solid var(--select-type-a-with-icon-color-4);
+      box-sizing: border-box;
+    }
+    &:hover {
+      border-color: unset;
+      border-bottom: 1px solid var(--select-type-a-with-icon-color-4);
+      box-sizing: border-box;
+    }
+  }
+  // [class$='indicatorContainer'] {
+  //   color: var(--select-type-a-with-icon-color-5);
+  //   // &:hover {
+  //   //   color: red;
+  //   // }
+  // }
+  [class$='menu'] {
+    // background-color: red;
+    margin-left: 0.5px;
+    cursor: pointer;
+  }
+  [class$='MenuList'] {
+    // background-color: green;
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+  [class$='option'] {
+    // background-color: black;
+    // padding: 1rem 1rem;
+    // margin: 0rem 1rem;
+    // width: calc(100% - 2rem);
+    background-color: unset;
+    margin-top: unset;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.045);
+      color: black;
+      // box-shadow: 0px 0px 10px 0px rgba(black, 0.2);
+    }
+    &:focus {
+      background-color: red;
+    }
+    &:focus-within {
+      background-color: red;
+    }
+    &:focus-visible {
+      background-color: red;
+    }
+    &:active {
+      background-color: rgba(0, 0, 0, 0.125);
+    }
+    &:any-link {
+      background-color: red;
+    }
+    &:visited {
+      background-color: red;
+    }
+    &::selection {
+      background-color: red;
+    }
   }
 }
+
+// .filter {
+//   // background-color: red;
+
+//   &__control {
+//     background-color: brown;
+//   }
+
+//   &__placeholder {
+//     background-color: brown;
+//   }
+
+//   &__menu {
+//     margin: 0.125rem auto;
+//     background-color: green;
+//   }
+
+//   &__option {
+//     // background-color: white;
+//     background-color: blue;
+
+//     &--is-focused {
+//       background-color: violet;
+//     }
+//   }
+
+//   &__group {
+//     padding: 0;
+//   }
+
+//   &__menu-portal {
+//     border: 1px solid darkblue;
+//   }
+// }

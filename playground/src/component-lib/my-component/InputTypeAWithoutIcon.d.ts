@@ -3,8 +3,8 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     ryImage: any;
     ryShowIcon?: boolean;
     ryIcon?: string;
-    ryLabel?: string;
+    rylabel?: string;
     ryType?: string;
 }
-declare const Input: React.FC<InputProps>;
-export { InputProps, Input };
+declare const InputTypeAWithoutIcon: React.FC<InputProps>;
+export { InputProps, InputTypeAWithoutIcon };

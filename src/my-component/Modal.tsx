@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '../assets/inputs/Modal.module.scss';
+import { motion } from 'framer-motion';
 
 interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
   ryImage: HTMLElement;
@@ -9,6 +10,9 @@ interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
   ryOpen?: false;
   ryClass: any;
   ryClose?: any;
+  ryframermotionAnimate?: any;
+  ryframermotionInitial?: any;
+  ryframermotionTransition?: any;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -16,17 +20,24 @@ const Modal: React.FC<ModalProps> = ({
   ryLabel,
   ryIcon,
   ryOpen,
-  ryClass,
-  ryClose,
   ...props
 }) => {
   return ryOpen ? (
-    <div className={ryClass}>
-      <div  >{props.children}</div>
-      <div
-        onClick={() => { console.log('rrr'); ryClose(); }}
-      ></div>
-    </div>
+    <motion.div className={props.ryClass}>
+      <motion.div
+        initial={{ y: '-200vh' }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        {props.children}
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        onClick={props.ryClose}
+      ></motion.div>
+    </motion.div>
   ) : null;
 };
 

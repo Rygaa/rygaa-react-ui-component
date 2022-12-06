@@ -7,7 +7,7 @@ interface CheckboxInputProps
   ryImage?: any;
   ryShowIcon?: boolean;
   ryIcon?: string;
-  ryText?: string;
+  rytext?: string;
 }
 
 const CheckboxInput: React.FC<CheckboxInputProps> = props => {
@@ -16,7 +16,7 @@ const CheckboxInput: React.FC<CheckboxInputProps> = props => {
       <div className={classes['ry-box-checkboxinputt']}>
         {props.value ? <img src={checkICON} /> : null}
       </div>
-      <p className={classes['ry-text-checkboxinputt']}>{props.ryText}</p>
+      <p className={classes['ry-text-checkboxinputt']}>{props.rytext}</p>
     </div>
   );
 };

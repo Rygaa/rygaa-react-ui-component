@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '../assets/inputs/Select.module.scss';
+import Selectt from 'react-select';
 
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   ryText: string;
@@ -7,32 +8,24 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   ryIcon?: string;
   ryAlign?: string;
   ryStyle?: Object;
-  ryLabel?: string;
+  rylabel?: string;
+  ryoptions?: any;
+  rydefaultvalue?: any;
+  ryonChange?: any;
+  ryplaceholder?: string;
 }
 
-const Select: React.FC<SelectProps> = ({
-  ryShowIcon,
-  ryLabel,
-  ryStyle,
-  ryAlign,
-  ryIcon,
-  ryText,
-  ...props
-}) => {
+const Select: React.FC<SelectProps> = ({ ...props }) => {
   return (
-    <div className={classes['big-container']}>
-      {ryLabel && <p>{ryLabel}</p>}
-      <select
-        onChange={e => {
-          if (props.onChange) {
-            props.onChange(e);
-          }
-        }}
-        className={classes['select']}
-      >
-        {props.children}
-      </select>
-    </div>
+    <Selectt
+      defaultValue={props.ryoptions.filter(
+        ({ value }: any) => value === props.rydefaultvalue
+      )}
+      className={classes['select']}
+      options={props.ryoptions}
+      onChange={props.ryonChange}
+      placeholder={props.ryplaceholder}
+    />
   );
 };
 

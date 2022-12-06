@@ -5,7 +5,11 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
     ryIcon?: string;
     ryAlign?: string;
     ryStyle?: Object;
-    ryLabel?: string;
+    rylabel?: string;
+    ryoptions?: any;
+    rydefaultvalue?: any;
+    ryonChange?: any;
+    ryplaceholder?: string;
 }
 declare const Select: React.FC<SelectProps>;
 export { SelectProps, Select };

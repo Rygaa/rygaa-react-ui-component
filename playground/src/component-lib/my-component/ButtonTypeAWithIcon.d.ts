@@ -10,5 +10,5 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     ryShowOnlyIcon?: boolean;
     ryContainerAlignSelf?: 'flex-start' | 'flex-end' | 'center';
 }
-declare const Button: React.FC<ButtonProps>;
-export { ButtonProps, Button };
+declare const ButtonTypeAWithIcon: React.FC<ButtonProps>;
+export { ButtonProps, ButtonTypeAWithIcon };

@@ -1,6 +1,6 @@
 {
   "name": "@rygaa/react-ui-component",
-  "version": "1.0.64",
+  "version": "1.0.66",
   "description": "My personal React component Library - tutorial",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -42,10 +42,10 @@
   "typings": "dist/index.d.ts",
   "dependencies": {
     "@rollup/plugin-image": "^2.1.1",
+    "framer-motion": "^4.1.17",
     "node-sass": "^7.0.1",
-    "react": "^18.2.0",
     "react-calendar": "^3.9.0",
     "react-datepicker": "^4.8.0",
-    "react-dom": "^18.2.0"
+    "react-select": "^5.7.0"
   }
 }

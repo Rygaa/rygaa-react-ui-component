@@ -1,0 +1,141 @@
+@import '../helpers/fonts.module.scss';
+
+@mixin container-size-01() {
+  width: 11.5625rem;
+  height: 3.125rem;
+}
+
+@mixin container-size-02() {
+  width: 9.8856rem;
+  height: 2.5rem;
+}
+
+@mixin container-size-03() {
+  width: 8.235rem;
+  height: 2.2256rem;
+}
+
+@mixin container-size-04() {
+  width: 6.5881rem;
+  height: 2.2256rem;
+}
+
+@mixin container-font-size-01() {
+  > button {
+    @include Roboto-B14();
+    color: var(--custom-color2);
+  }
+}
+
+@mixin container-font-size-02() {
+  > button {
+    @include Roboto-B15();
+    color: var(--custom-color2);
+  }
+}
+
+@mixin container-font-size-03() {
+  > button {
+    @include Roboto-B16();
+    color: var(--custom-color2);
+  }
+}
+
+@mixin container-font-size-04() {
+  > button {
+    @include Roboto-B17();
+    color: var(--custom-color2);
+  }
+}
+
+.container-without-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.1563rem;
+  width: 100%;
+  height: 100%;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.size1 {
+  @include container-size-01();
+  @include container-font-size-01();
+}
+
+.size2 {
+  @include container-size-02();
+  @include container-font-size-02();
+}
+
+.size3 {
+  @include container-size-03();
+  @include container-font-size-03();
+}
+
+.size4 {
+  @include container-size-04();
+  @include container-font-size-04();
+}
+
+.size5 {
+  width: 100% !important;
+  height: 3.125rem !important;
+  @include container-font-size-01();
+}
+
+.primary {
+  background-color: var(--button-type-a-without-icon-color-1);
+  &:hover {
+    background-color: var(--button-type-a-without-icon-color-12);
+  }
+  > button {
+    color: var(--button-type-a-without-icon-color-2);
+  }
+}
+
+.secondary {
+  background-color: var(--button-type-a-without-icon-color-3);
+  &:hover {
+    background-color: var(--button-type-a-without-icon-color-13);
+  }
+  > button {
+    color: var(--button-type-a-without-icon-color-4);
+  }
+}
+
+.danger {
+  background-color: var(--button-type-a-without-icon-color-5);
+  &:hover {
+    background-color: var(--button-type-a-without-icon-color-14);
+  }
+  > button {
+    color: var(--button-type-a-without-icon-color-6);
+  }
+}
+
+.warning {
+  background-color: var(--button-type-a-without-icon-color-7);
+
+  > button {
+    color: var(--button-type-a-without-icon-color-8);
+  }
+}
+
+.none {
+  background-color: var(--button-type-a-without-icon-color-9);
+
+  > button {
+    color: var(--button-type-a-without-icon-color-10);
+  }
+
+  &:hover {
+    // background-color: $container-background-color-05__hover;
+  }
+}

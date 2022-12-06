@@ -1,9 +1,9 @@
 import React from 'react';
-interface CalendarInputProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
-    ryImage: any;
+interface CalendarInputProps extends React.HTMLAttributes<HTMLDivElement> {
+    ryimage: any;
     ryShowIcon?: boolean;
     ryIcon?: string;
-    ryLabel?: string;
+    rylabel?: string;
     ryType?: string;
     ryDateOnChange: any;
     ryDateValue: string;

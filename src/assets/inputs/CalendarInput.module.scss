@@ -24,7 +24,10 @@
   border-radius: 2.5px;
   border: 1px solid var(--border-input-normal);
   background-color: var(--background-color-input-normal);
-
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   min-height: 3.125rem;
   // border-bottom: 1px solid var(--custom-color1);
   // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.125);

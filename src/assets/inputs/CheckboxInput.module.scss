@@ -1,6 +1,5 @@
 @import '../helpers/fonts.module.scss';
 
-
 .ry-root-checkboxinputt {
   display: flex;
   cursor: pointer;
@@ -10,13 +9,12 @@
   p {
     @include Roboto-R16();
     align-self: center;
-    color: #646464;
+    color: var(--checkbox-input-color-3);
     margin-left: 0.5rem;
     margin: 0;
     padding: 0;
   }
 }
-
 
 .ry-box-checkboxinputt {
   display: flex;
@@ -25,13 +23,13 @@
   align-items: center;
   width: 1.25rem !important;
   height: 1.25rem !important;
-  border: 1px solid var(--border-input-normal);
-  background-color: var(--backgroundColor-input-normal);
+  border: 1px solid var(--checkbox-input-color-1);
+  background-color: var(--checkbox-input-color-2);
   border-radius: 0.1563rem;
+  // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.075);
 
-  >img {
+  > img {
     width: 0.938rem;
     height: 0.938rem;
   }
 }
-

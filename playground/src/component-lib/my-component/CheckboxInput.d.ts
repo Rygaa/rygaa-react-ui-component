@@ -3,7 +3,7 @@ interface CheckboxInputProps extends React.InputHTMLAttributes<HTMLInputElement>
     ryImage?: any;
     ryShowIcon?: boolean;
     ryIcon?: string;
-    ryText?: string;
+    rytext?: string;
 }
 declare const CheckboxInput: React.FC<CheckboxInputProps>;
 export { CheckboxInputProps, CheckboxInput };

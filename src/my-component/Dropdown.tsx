@@ -25,7 +25,6 @@ const Dropdown: React.FC<DropdownProps> = ({
     <div
       className={classes['divv']}
       onBlur={() => {
-        console.log('blur');
         setOpen(false);
       }}
       tabIndex={0}

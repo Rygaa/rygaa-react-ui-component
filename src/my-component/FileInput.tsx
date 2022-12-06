@@ -5,7 +5,7 @@ interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
   ryImage: string;
   ryShowIcon?: boolean;
   ryIcon?: string;
-  ryLabel?: string;
+  rylabel?: string;
   ryColor?: string;
   ryExistingFile?: string;
   ryLink?: string;
@@ -16,7 +16,7 @@ const FileInput: React.FC<FileInputProps> = ({
   ryExistingFile,
   ryColor,
   ryShowIcon,
-  ryLabel,
+  rylabel,
   ryIcon,
   ryImage,
   ...props
@@ -26,7 +26,7 @@ const FileInput: React.FC<FileInputProps> = ({
 
   return (
     <div className={classes['ry-root-fileinput']} style={props.style}>
-      {ryLabel && <p className={classes['ry-label-fileinput']}>{ryLabel}</p>}
+      {rylabel && <p className={classes['ry-label-fileinput']}>{rylabel}</p>}
 
       <div className={classes['ry-container-fileinput']}>
         <button

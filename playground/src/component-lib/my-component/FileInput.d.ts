@@ -3,7 +3,7 @@ interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
     ryImage: string;
     ryShowIcon?: boolean;
     ryIcon?: string;
-    ryLabel?: string;
+    rylabel?: string;
     ryColor?: string;
     ryExistingFile?: string;
     ryLink?: string;

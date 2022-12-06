@@ -4,11 +4,8 @@
 
 .container {
   display: grid;
-  grid-template-rows: 5% 95%;
-  row-gap: .5rem;
-  margin-left: 1.5rem;
+  grid-template-rows: 6% 94%;
   height: 100%;
-  margin-right: 2rem;
   flex: 1;
 
   >p:nth-child(1) {
@@ -16,10 +13,11 @@
     color: var(--color-title-normal);
 
     grid-row: 1 / 2;
-    border-bottom: 1px solid var(--border-title-normal);
+    border-bottom: 2px solid var(--border-title-normal);
     margin: 0px;
     padding: 0px;
     opacity: .9;
+    margin: 0rem 2rem;
   }
 }
 

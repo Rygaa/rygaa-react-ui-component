@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ryContainerStyle?: Object;
   ryContainerClassname?: any;
   ryShowOnlyIcon?: boolean;
-  ryContainerAlignSelf?: "flex-start" | "flex-end" | "center";
+  ryContainerAlignSelf?: 'flex-start' | 'flex-end' | 'center';
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,11 +23,10 @@ const Button: React.FC<ButtonProps> = ({
   ryContainerClassname,
   ryShowOnlyIcon,
   ryIconSize,
-  ryContainerAlignSelf = "center",
+  ryContainerAlignSelf = 'center',
   ...props
 }) => {
   const containerOnClick = (event: any) => {
-    console.log(event)
     // if (event.target === event.currentTarget) {
     props.onClick && props.onClick(event);
     // }
@@ -39,12 +38,19 @@ const Button: React.FC<ButtonProps> = ({
     }
   };
 
-  ryContainerStyle = ryContainerStyle ? ryContainerStyle : {}
+  ryContainerStyle = ryContainerStyle ? ryContainerStyle : {};
 
   const ButtonWithIcon = (
     <div
-      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
-      className={classNames([classes['container-with-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
+      style={Object.assign(ryContainerStyle, {
+        alignSelf: ryContainerAlignSelf,
+      })}
+      className={classNames([
+        classes['container-with-icon'],
+        props.className,
+        classes[ryButtonType],
+        classes[ryButtonSize],
+      ])}
       onClick={containerOnClick1}
     >
       {ryIcon}
@@ -54,8 +60,15 @@ const Button: React.FC<ButtonProps> = ({
 
   const ButtonWithoutIcon = (
     <div
-      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
-      className={classNames([classes['container-without-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
+      style={Object.assign(ryContainerStyle, {
+        alignSelf: ryContainerAlignSelf,
+      })}
+      className={classNames([
+        classes['container-without-icon'],
+        props.className,
+        classes[ryButtonType],
+        classes[ryButtonSize],
+      ])}
       onClick={containerOnClick1}
     >
       <button {...props}>{ryButtonText}</button>
@@ -64,22 +77,28 @@ const Button: React.FC<ButtonProps> = ({
 
   const ButtonWithOnlyIcon = (
     <div
-      style={Object.assign(ryContainerStyle, { alignSelf: ryContainerAlignSelf })}
-      className={classNames([classes['container-with-only-icon'], props.className, classes[ryButtonType], classes[ryButtonSize]])}
+      style={Object.assign(ryContainerStyle, {
+        alignSelf: ryContainerAlignSelf,
+      })}
+      className={classNames([
+        classes['container-with-only-icon'],
+        props.className,
+        classes[ryButtonType],
+        classes[ryButtonSize],
+      ])}
       onClick={containerOnClick}
     >
       {ryIcon}
     </div>
-  )
+  );
 
   const render = () => {
     if (ryShowOnlyIcon) {
       return ButtonWithOnlyIcon;
-    }
-    else {
+    } else {
       return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
     }
-  }
+  };
 
   return render();
 };

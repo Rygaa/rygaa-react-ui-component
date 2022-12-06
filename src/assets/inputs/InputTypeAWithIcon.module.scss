@@ -1,6 +1,5 @@
 @import '../helpers/fonts.module.scss';
 
-
 .ry-root-input {
   display: flex;
   flex-direction: column;
@@ -10,23 +9,38 @@
     margin: 0px;
     @include Roboto-B15;
     margin-bottom: 0.25rem;
-    color: var(--color-input-normal);
+    color: var(--input-type-a-with-icon-color-1);
   }
 
   .ry-container-input {
     display: flex;
     min-height: 3.125rem;
-    border: 1px solid var(--border-input-normal);
-    background-color: var(--background-color-input-normal);
+    border-bottom: 1px solid var(--input-type-a-with-icon-color-2);
+    background-color: var(--input-type-a-with-icon-color-3);
     border-radius: 2.5px;
     box-sizing: border-box;
+    transition: 0.3s;
 
     > svg {
       padding: 0.75rem 1.25rem;
       width: 0.75rem;
       height: unset !important;
+
       path {
-        fill: var(--fill-input-normal);
+        transition: 0.3s;
+
+        fill: var(--input-type-a-with-icon-color-4);
+      }
+    }
+
+    &:focus-within {
+      border-bottom: 1px solid var(--input-type-a-with-icon-color-5);
+      background-color: var(--input-type-a-with-icon-color-6);
+
+      > svg {
+        path {
+          fill: var(--input-type-a-with-icon-color-7);
+        }
       }
     }
 
@@ -37,10 +51,11 @@
       padding-left: 10px;
       border: none;
       background-color: transparent;
+      color: var(--input-type-a-with-icon-color-8);
 
       &::placeholder {
         @include Roboto-R15();
-        color: var(--placeholder-input-normal);
+        color: var(--input-type-a-with-icon-color-9);
         opacity: 0.65;
         text-align: left;
         transition: 0.1s;
@@ -48,9 +63,10 @@
 
       &:focus-within {
         outline: none;
+        color: var(--input-type-a-with-icon-color-10);
 
         &::placeholder {
-          color: transparent;
+          color: var(--input-type-a-with-icon-color-11);
         }
 
         > input {
@@ -60,4 +76,3 @@
     }
   }
 }
-

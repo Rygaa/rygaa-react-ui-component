@@ -1,43 +1,12 @@
 @import '../helpers/fonts.module.scss';
 
-
 .ry-root-colorinputt {
   display: flex;
   flex-direction: column;
-  > div {
-    width: 100%;
+
+  > div:nth-child(2) {
     position: relative;
-    > input {
-      width: 100%;
-      height: 50px;
-      border: none;
-      border-radius: 2.5px;
-    }
-    > div {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
-
-      > div:nth-child(1) {
-        width: 100%;
-        > div {
-          border-radius: 0 !important;
-        }
-      }
-      > button:nth-child(2) {
-        margin-top: .5rem;
-        border: none;
-        border-radius: 2.5px;
-        @include Roboto-B15();
-        justify-content: center;
-        width: 100%;
-        height: 3.125rem;
-
-      }
-    }
-
+    display: flex;
   }
 }
 
@@ -46,3 +15,56 @@
   margin-bottom: 0.25rem;
 }
 
+.color-input-container {
+  width: 100%;
+  height: 3.125rem;
+  border: none;
+  border-radius: 2.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > p {
+    // top: calc(25% - (.25rem / 2));
+    // left: calc(50% - .25rem);
+    // top: 50%;
+    // left: 25%;
+
+    // margin: .25rem;
+    // padding: .5rem;
+    background-color: rgba(white, 0.9);
+    @include Roboto-B16();
+    padding: 0.5rem 0.5rem;
+    border-radius: 2.5px;
+    box-shadow: 0px 0px 10px 0px rgba(black, 0.5);
+  }
+}
+
+.color-picker-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 90% !important;
+  // margin-left: 5%;
+  // top: 3.125rem;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+
+  > div:nth-child(1) {
+    display: flex;
+    width: 90% !important;
+
+    > div {
+      border-radius: 0 !important;
+    }
+  }
+  > button:nth-child(2) {
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 2.5px;
+    @include Roboto-B15();
+    justify-content: center;
+    width: 90% !important;
+    height: 3.125rem;
+    cursor: pointer;
+  }
+}

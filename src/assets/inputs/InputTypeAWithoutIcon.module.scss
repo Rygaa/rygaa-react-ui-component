@@ -3,13 +3,14 @@
 .ry-root-input {
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
 }
 
 .ry-label-input {
   padding: 0px;
   margin: 0px;
   @include Roboto-B15;
-  color: var(--color-input-normal);
+  color: var(--input-type-a-without-icon-color-1);
   margin-bottom: 0.25rem;
 }
 
@@ -17,27 +18,27 @@
   @include Roboto-R15();
   display: flex;
   min-height: 3.125rem;
-  border: 1px solid var(--border-input-normal);
-  background-color: var(--background-color-input-normal);
+  border: none;
+  border-bottom: 1px solid var(--input-type-a-without-icon-color-2);
+  color: var(--input-type-a-without-icon-color-3);
+  background-color: transparent;
   border-radius: 2.5px;
   box-sizing: border-box;
   padding-left: 10px;
 
   &::placeholder {
     @include Roboto-R15();
-    color: #8e8e8e;
+    color: var(--input-type-a-without-icon-color-4);
     transition: 0.1s;
   }
 
   &:focus-within {
     outline: none;
+    color: var(--input-type-a-without-icon-color-5);
+    border-bottom: 1px solid var(--input-type-a-without-icon-color-6);
 
     &::placeholder {
-      color: white;
-    }
-
-    > input {
-      outline: none;
+      color: var(--input-type-a-without-icon-color-7);
     }
   }
 }

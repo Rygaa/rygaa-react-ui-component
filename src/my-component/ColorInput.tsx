@@ -1,52 +1,73 @@
 import React from 'react';
-import classes from "../assets/inputs/ColorInput.module.scss";
-import { HexColorPicker } from "react-colorful";
+import classes from '../assets/inputs/ColorInput.module.scss';
+import { HexColorPicker } from 'react-colorful';
 
 interface ColorInputProps extends React.ButtonHTMLAttributes<HTMLElement> {
   ryImage: HTMLElement;
   ryShowIcon?: boolean;
   ryIcon?: string;
-  ryLabel?: string,
-  ryColor?: string,
+  ryLabel?: string;
+  ryColor?: string;
 }
 
-const ColorInput: React.FC<ColorInputProps> = ({ ryColor, ryShowIcon, ryLabel, ryIcon, ryImage, ...props }) => {
+const ColorInput: React.FC<ColorInputProps> = ({
+  ryColor,
+  ryShowIcon,
+  ryLabel,
+  ryIcon,
+  ryImage,
+  ...props
+}) => {
   const x = (e: any) => {
     if (props.onChange) {
       props.onChange(e);
     }
-
   };
 
   const [colorPickerOpen, setColorPickerOpen] = React.useState(false);
-  const color = props.color ? props.color : "#FFFFFF";
-  return (
-    <div className={classes["ry-root-colorinputt"]} style={props.style}>
-      {ryLabel && (
-        <p className={classes["ry-label-colorinputt"]}>{ryLabel}</p>
-      )}
-      <div>
-        <input
-          style={{
-            backgroundColor: `${props.color}`,
+  const [color, setColor] = React.useState(
+    props.color ? props.color : '#808080'
+  );
+  const [selectedColor, setSelectedColor] = React.useState(props.color ? true : false);
 
+  React.useEffect(() => {
+    if (props.color) {
+      // setColor(props.color);
+      setSelectedColor(true);
+    }
+  }, [props.color]);
+
+  return (
+    <div className={classes['ry-root-colorinputt']} style={props.style}>
+      {ryLabel && <p className={classes['ry-label-colorinputt']}>{ryLabel}</p>}
+      <div>
+        <div
+          style={{
+            backgroundColor: `${props.color || color}`,
           }}
-          type="button"
           onClick={() => {
             setColorPickerOpen(!colorPickerOpen);
           }}
-        />
-        {colorPickerOpen && 
-          <div>
+          className={classes['color-input-container']}
+        >
+          {!colorPickerOpen && (
+            <p>
+              {selectedColor && color
+                ? 'Change color'
+                : 'No color is selected please select one'}
+            </p>
+          )}
+        </div>
+
+        {colorPickerOpen && (
+          <div className={classes['color-picker-container']}>
             <HexColorPicker color={color} onChange={x} />
             <button onClick={() => setColorPickerOpen(false)}>Close</button>
           </div>
-        }
-
+        )}
       </div>
     </div>
   );
 };
-
 
 export { ColorInputProps, ColorInput };
