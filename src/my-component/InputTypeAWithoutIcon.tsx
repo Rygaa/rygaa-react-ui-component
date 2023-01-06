@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from '../assets/inputs/InputTypeAWithoutIcon.module.scss';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  ryImage: any;
+  ryImage?: any;
   ryShowIcon?: boolean;
   ryIcon?: string;
   rylabel?: string;

@@ -96,7 +96,7 @@ const Button: React.FC<ButtonProps> = ({
     if (ryShowOnlyIcon) {
       return ButtonWithOnlyIcon;
     } else {
-      return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+      return <div>FDFDGRGERFGR</div>;
     }
   };
 

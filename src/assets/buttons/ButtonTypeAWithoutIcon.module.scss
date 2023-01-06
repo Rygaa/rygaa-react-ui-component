@@ -92,6 +92,7 @@
 
 .primary {
   background-color: var(--button-type-a-without-icon-color-1);
+  transition: 300ms;
   &:hover {
     background-color: var(--button-type-a-without-icon-color-12);
   }

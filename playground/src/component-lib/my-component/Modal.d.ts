@@ -1,10 +1,9 @@
 import React from 'react';
 interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
-    ryImage: HTMLElement;
     ryShowIcon?: boolean;
     ryIcon?: string;
     ryLabel?: string;
-    ryOpen?: false;
+    ryOpen?: Boolean;
     ryClass: any;
     ryClose?: any;
     ryframermotionAnimate?: any;

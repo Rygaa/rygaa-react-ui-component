@@ -1,6 +1,6 @@
 import React from 'react';
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-    ryImage: any;
+    ryImage?: any;
     ryShowIcon?: boolean;
     ryIcon?: string;
     rylabel?: string;

@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from '../assets/inputs/InputTypeAWithoutIcon.module.scss';
+import classes from '../assets/inputs/ImageInput.module.scss';
 
 interface ImageInputProps extends React.HTMLAttributes<HTMLElement> {
   ryImage: string;
@@ -65,6 +65,16 @@ const ImageInput: React.FC<ImageInputProps> = ({
           }}
           type="file"
         />
+        <div
+          onClick={() => {
+            if (inputRef && inputRef.current) {
+              inputRef.current.click();
+            }
+          }}
+          className={classes['edit-image-small-button']}
+        >
+          <button>Click on the image to update it</button>
+        </div>
       </div>
     </div>
   );

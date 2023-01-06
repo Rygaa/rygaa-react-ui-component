@@ -5,6 +5,7 @@ import { InputTypeAWithIcon } from './my-component/InputTypeAWithIcon';
 import { Page } from './my-component/Page';
 import { CheckboxInput } from './my-component/CheckboxInput';
 import { ColorInput } from './my-component/ColorInput';
+import { ColorInputV2 } from './my-component/ColorInputV2';
 import { FileInput } from './my-component/FileInput';
 import { Select } from './my-component/Select';
 import { Dropdown } from './my-component/Dropdown';
@@ -22,6 +23,7 @@ export {
   InputTypeAWithoutIcon,
   CheckboxInput,
   ColorInput,
+  ColorInputV2,
   FileInput,
   Select,
   Dropdown,

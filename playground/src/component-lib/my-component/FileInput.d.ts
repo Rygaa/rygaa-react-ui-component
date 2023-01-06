@@ -7,6 +7,7 @@ interface FileInputProps extends React.HTMLAttributes<HTMLElement> {
     ryColor?: string;
     ryExistingFile?: string;
     ryLink?: string;
+    ryDefaultValue?: string;
 }
 declare const FileInput: React.FC<FileInputProps>;
 export { FileInputProps, FileInput };

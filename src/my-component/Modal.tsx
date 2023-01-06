@@ -3,11 +3,10 @@ import classes from '../assets/inputs/Modal.module.scss';
 import { motion } from 'framer-motion';
 
 interface ModalProps extends React.HTMLAttributes<HTMLDivElement> {
-  ryImage: HTMLElement;
   ryShowIcon?: boolean;
   ryIcon?: string;
   ryLabel?: string;
-  ryOpen?: false;
+  ryOpen?: Boolean;
   ryClass: any;
   ryClose?: any;
   ryframermotionAnimate?: any;

@@ -1,45 +1,50 @@
 @import '../helpers/fonts.module.scss';
 
-
-
 .container {
   display: grid;
   grid-template-rows: 6% 94%;
   height: 100%;
   flex: 1;
 
-  >p:nth-child(1) {
-    @include Roboto-B12();
-    color: var(--color-title-normal);
-
+  > p:nth-child(1) {
+    @include Roboto-B13();
     grid-row: 1 / 2;
-    border-bottom: 2px solid var(--border-title-normal);
-    margin: 0px;
-    padding: 0px;
-    opacity: .9;
-    margin: 0rem 2rem;
+    border-bottom: 1.25px solid var(--page-color-1);
+    box-shadow: 0px 4px 10px 0px var(--page-color-2);
+    color: var(--page-color-3);
+    background-color: var(--page-color-4);
+    padding: 1rem 2rem;
   }
 }
 
-.main1 {
+.main-1 {
   display: flex;
-  margin-bottom: 2rem;
-  column-gap: 2rem;
   width: 100%;
 
-  >aside {
+  > aside {
     display: flex;
     flex-direction: column;
-    background: #ffffff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    cursor: unset;
     padding: 1.25rem 2rem;
     width: 20%;
+
+    background-color: var(--aside-color-1);
+    border: 1px solid var(--aside-color-2);
+    box-shadow: 0px 4px 10px 0px var(--aside-color-3);
   }
 
-  >main {
+  > main {
     display: flex;
     flex-direction: column;
     flex: 1;
     width: 100%;
   }
+}
+
+.container-without-title {
+  display: grid;
+  height: 100%;
+  flex: 1;
+  margin-top: 0rem;
 }

@@ -10,6 +10,7 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
     rydefaultvalue?: any;
     ryonChange?: any;
     ryplaceholder?: string;
+    rydisabled?: boolean;
 }
 declare const Select: React.FC<SelectProps>;
 export { SelectProps, Select };

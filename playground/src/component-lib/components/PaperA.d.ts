@@ -3,6 +3,7 @@ interface PageProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
     containerClassname: any;
     rycenter: boolean;
     rypadding: boolean;
+    rymargin: boolean;
     doeshover: boolean;
 }
 declare const PaperA: React.FC<PageProps>;

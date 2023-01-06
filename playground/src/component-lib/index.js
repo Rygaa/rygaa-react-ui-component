@@ -119,14 +119,14 @@ var Button = function (_a) {
             return ButtonWithOnlyIcon;
         }
         else {
-            return !!ryIcon ? ButtonWithIcon : ButtonWithoutIcon;
+            return React.createElement("div", null, "FDFDGRGERFGR");
         }
     };
     return render();
 };
 
-var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.InputTypeAWithoutIcon-module_ry-root-input__3xx3r{display:flex;flex-direction:column;transition:.3s}.InputTypeAWithoutIcon-module_ry-label-input__2poB_{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:var(--input-type-a-without-icon-color-1);margin:0 0 .25rem}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu{font-size:.9375rem;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;display:flex;min-height:3.125rem;border:none;border-bottom:1px solid var(--input-type-a-without-icon-color-2);color:var(--input-type-a-without-icon-color-3);background-color:transparent;border-radius:2.5px;box-sizing:border-box;padding:0 0 0 10px}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu::placeholder{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;padding:0;color:var(--input-type-a-without-icon-color-4);transition:.1s}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu:focus-within{outline:none;color:var(--input-type-a-without-icon-color-5);border-bottom:1px solid var(--input-type-a-without-icon-color-6)}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu:focus-within::placeholder{color:var(--input-type-a-without-icon-color-7)}";
-var classes$1 = {"ry-root-input":"InputTypeAWithoutIcon-module_ry-root-input__3xx3r","ry-label-input":"InputTypeAWithoutIcon-module_ry-label-input__2poB_","ry-input-without-image":"InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu"};
+var css_248z$1 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.InputTypeAWithoutIcon-module_ry-root-input__3xx3r{display:flex;flex-direction:column;transition:.3s}.InputTypeAWithoutIcon-module_ry-label-input__2poB_{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:var(--input-type-a-without-icon-color-1);margin:0 0 .25rem}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu{font-size:.9375rem;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;display:flex;min-height:3.125rem;border:none;border-bottom:1px solid var(--input-type-a-without-icon-color-2);color:var(--input-type-a-without-icon-color-3);background-color:transparent;border-radius:2.5px;box-sizing:border-box;padding:0 0 0 10px}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu::placeholder{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;padding:0;color:var(--input-type-a-without-icon-color-4);transition:.1s}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu:focus-within{outline:none;color:var(--input-type-a-without-icon-color-5);border-bottom:1px solid var(--input-type-a-without-icon-color-6)}.InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu:focus-within::placeholder{color:var(--input-type-a-without-icon-color-7)}.InputTypeAWithoutIcon-module_edit-image-small-button__p3IxT{width:100%;height:100%;background-color:red;position:absolute}";
+var classes$1 = {"ry-root-input":"InputTypeAWithoutIcon-module_ry-root-input__3xx3r","ry-label-input":"InputTypeAWithoutIcon-module_ry-label-input__2poB_","ry-input-without-image":"InputTypeAWithoutIcon-module_ry-input-without-image__3p4iu","edit-image-small-button":"InputTypeAWithoutIcon-module_edit-image-small-button__p3IxT"};
 styleInject(css_248z$1);
 
 var InputTypeAWithoutIcon = function (props) {
@@ -147,15 +147,17 @@ var InputTypeAWithIcon = function (props) {
             React.createElement("input", __assign({}, props)))));
 };
 
-var css_248z$3 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Page-module_container__2wfjR{display:grid;grid-template-rows:6% 94%;height:100%;flex:1}.Page-module_container__2wfjR>p:first-child{font-size:1.4063rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;color:var(--color-title-normal);grid-row:1/2;border-bottom:2px solid var(--border-title-normal);padding:0;opacity:.9;margin:0 2rem}.Page-module_main1__ijT9y{display:flex;margin-bottom:2rem;column-gap:2rem;width:100%}.Page-module_main1__ijT9y>aside{display:flex;flex-direction:column;background:#fff;box-shadow:0 0 4px rgba(0,0,0,.25);padding:1.25rem 2rem;width:20%}.Page-module_main1__ijT9y>main{display:flex;flex-direction:column;flex:1;width:100%}";
-var classes$3 = {"container":"Page-module_container__2wfjR","main1":"Page-module_main1__ijT9y"};
+var css_248z$3 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Page-module_container__2wfjR{display:grid;grid-template-rows:6% 94%;height:100%;flex:1}.Page-module_container__2wfjR>p:first-child{font-size:1.25rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;grid-row:1/2;border-bottom:1.25px solid var(--page-color-1);box-shadow:0 4px 10px 0 var(--page-color-2);color:var(--page-color-3);background-color:var(--page-color-4);padding:1rem 2rem}.Page-module_main-1__2zCXc{display:flex;width:100%}.Page-module_main-1__2zCXc>aside{display:flex;flex-direction:column;border-radius:5px;cursor:unset;padding:1.25rem 2rem;width:20%;background-color:var(--aside-color-1);border:1px solid var(--aside-color-2);box-shadow:0 4px 10px 0 var(--aside-color-3)}.Page-module_main-1__2zCXc>main{display:flex;flex-direction:column;flex:1;width:100%}.Page-module_container-without-title__3Y5YZ{display:grid;height:100%;flex:1;margin-top:0}";
+var classes$3 = {"container":"Page-module_container__2wfjR","main-1":"Page-module_main-1__2zCXc","container-without-title":"Page-module_container-without-title__3Y5YZ"};
 styleInject(css_248z$3);
 
 var Page = function (_a) {
     var ryTitle = _a.ryTitle, ryAside = _a.ryAside, ryPrincipal = _a.ryPrincipal, props = __rest(_a, ["ryTitle", "ryAside", "ryPrincipal"]);
-    return (React.createElement("div", { className: classes$3['container'] },
-        React.createElement("p", null, ryTitle),
-        React.createElement("div", { className: classes$3['main1'] }, props.children)));
+    return (React.createElement("div", { className: ryTitle == ''
+            ? classes$3['container-without-title']
+            : classes$3['container'] },
+        ryTitle !== '' && React.createElement("p", null, ryTitle),
+        React.createElement("div", { className: classes$3['main-1'] }, props.children)));
 };
 
 var css_248z$4 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.CheckboxInput-module_ry-root-checkboxinputt__YigVJ{display:flex;cursor:pointer;width:fit-content;column-gap:.5rem}.CheckboxInput-module_ry-root-checkboxinputt__YigVJ p{font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;align-self:center;color:var(--checkbox-input-color-3);margin:0;padding:0}.CheckboxInput-module_ry-box-checkboxinputt__hEXmc{display:flex;justify-content:center;align-self:center;align-items:center;width:1.25rem!important;height:1.25rem!important;border:1px solid var(--checkbox-input-color-1);background-color:var(--checkbox-input-color-2);border-radius:.1563rem}.CheckboxInput-module_ry-box-checkboxinputt__hEXmc>img{width:.938rem;height:.938rem}";
@@ -170,11 +172,122 @@ var CheckboxInput = function (props) {
         React.createElement("p", { className: classes$4['ry-text-checkboxinputt'] }, props.rytext)));
 };
 
-var css_248z$5 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ColorInput-module_ry-root-colorinputt__1V0zf{display:flex;flex-direction:column}.ColorInput-module_ry-root-colorinputt__1V0zf>div:nth-child(2){position:relative;display:flex}.ColorInput-module_ry-label-colorinputt__2AwjR{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;margin:0 0 .25rem}.ColorInput-module_color-input-container__pLq1i{width:100%;height:3.125rem;border:none;border-radius:2.5px;display:flex;align-items:center;justify-content:center}.ColorInput-module_color-input-container__pLq1i>p{background-color:hsla(0,0%,100%,.9);font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:.5rem;border-radius:2.5px;box-shadow:0 0 10px 0 rgba(0,0,0,.5)}.ColorInput-module_color-picker-container__3MdHH{position:absolute;display:flex;flex-direction:column;width:90%!important;box-shadow:0 4px 40px rgba(0,0,0,.1)}.ColorInput-module_color-picker-container__3MdHH>div:first-child{display:flex;width:90%!important}.ColorInput-module_color-picker-container__3MdHH>div:first-child>div{border-radius:0!important}.ColorInput-module_color-picker-container__3MdHH>button:nth-child(2){border:none;border-radius:2.5px;font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;justify-content:center;width:90%!important;height:3.125rem;cursor:pointer}";
-var classes$5 = {"ry-root-colorinputt":"ColorInput-module_ry-root-colorinputt__1V0zf","ry-label-colorinputt":"ColorInput-module_ry-label-colorinputt__2AwjR","color-input-container":"ColorInput-module_color-input-container__pLq1i","color-picker-container":"ColorInput-module_color-picker-container__3MdHH"};
+var css_248z$5 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ColorInput-module_ry-root-colorinputt__1V0zf{display:flex;flex-direction:column}.ColorInput-module_ry-root-colorinputt__1V0zf>div:nth-child(2){position:relative;display:flex}.ColorInput-module_ry-label-colorinputt__2AwjR{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;margin:0 0 .25rem}.ColorInput-module_color-input-container__pLq1i{width:100%;height:3.125rem;border:none;border-radius:2.5px;display:flex;align-items:center;justify-content:center}.ColorInput-module_color-input-container__pLq1i>p{background-color:hsla(0,0%,100%,.9);font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:.5rem;border-radius:2.5px;box-shadow:0 0 10px 0 rgba(0,0,0,.5)}.ColorInput-module_color-picker-container__3MdHH{display:flex;flex-direction:column;width:20rem!important;box-shadow:0 4px 40px rgba(0,0,0,.1);padding:1rem;row-gap:1rem}.ColorInput-module_color-picker-container__3MdHH>div:first-child{display:grid;justify-content:space-between;grid-template-columns:repeat(auto-fit,1.5rem);row-gap:.5rem;column-gap:.5rem}.ColorInput-module_color-picker-container__3MdHH>div:first-child>div{box-shadow:0 0 4px 0 rgba(0,0,0,.25)}.ColorInput-module_modal__3XhRX{display:flex;position:fixed;width:100%;top:0;left:0;height:100%;justify-content:center;align-items:center;z-index:2000!important;font-family:Roboto}.ColorInput-module_modal__3XhRX>div:first-child{display:flex;flex-direction:column;background-color:#fff;z-index:2001!important;border-radius:5px}.ColorInput-module_modal__3XhRX>div:nth-child(2){background-color:rgba(17,24,39,.9);backdrop-filter:blur(5px);position:fixed;width:100%;height:100%;top:0;left:0}.ColorInput-module_modal-header__2w2Az{display:flex;justify-content:space-between;border-bottom:1px solid #000;padding:1rem}.ColorInput-module_modal-header__2w2Az>p{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:#201f1e}.ColorInput-module_modal-header__2w2Az>div:nth-child(2){border:none;background-color:transparent;font-weight:bolder;color:#575350;cursor:pointer;width:min-content}.ColorInput-module_modal-main__2fzSP{display:flex;flex-direction:column;padding-left:5%;margin-top:1.75rem;column-gap:1rem;row-gap:2rem}.ColorInput-module_modal-footer__2_RQV{display:flex;justify-content:right;margin-top:3rem;margin-right:5%;column-gap:1.5rem;margin-bottom:1rem}.ColorInput-module_modal-footer__2_RQV>button:first-child{background-color:transparent;font-weight:700;font-size:14px;border:none;color:#605e5c;cursor:pointer}.ColorInput-module_modal-footer__2_RQV>button:nth-child(2){background-color:transparent;font-weight:700;font-size:14px;border:none;background-color:#3ebe8e;border-radius:5px;color:#fff;width:100px;height:35px;cursor:pointer}.ColorInput-module_color-box__2C6nW{cursor:pointer;transition:.3s}.ColorInput-module_color-box__2C6nW:hover{transform:scale(1.2)}.ColorInput-module_color-boxx-selected__3A5Me{transition:.3s;border-radius:20px}";
+var classes$5 = {"ry-root-colorinputt":"ColorInput-module_ry-root-colorinputt__1V0zf","ry-label-colorinputt":"ColorInput-module_ry-label-colorinputt__2AwjR","color-input-container":"ColorInput-module_color-input-container__pLq1i","color-picker-container":"ColorInput-module_color-picker-container__3MdHH","modal":"ColorInput-module_modal__3XhRX","modal-header":"ColorInput-module_modal-header__2w2Az","modal-main":"ColorInput-module_modal-main__2fzSP","modal-footer":"ColorInput-module_modal-footer__2_RQV","color-box":"ColorInput-module_color-box__2C6nW","color-boxx-selected":"ColorInput-module_color-boxx-selected__3A5Me"};
 styleInject(css_248z$5);
 
+var css_248z$6 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ButtonTypeAWithoutIcon-module_container-without-icon__39ABc{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:.1563rem;width:100%;height:100%}.ButtonTypeAWithoutIcon-module_container-without-icon__39ABc button{background-color:transparent;border:none;cursor:pointer}.ButtonTypeAWithoutIcon-module_size1__3qpdH{width:11.5625rem;height:3.125rem}.ButtonTypeAWithoutIcon-module_size1__3qpdH>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size2__lMnBD{width:9.8856rem;height:2.5rem}.ButtonTypeAWithoutIcon-module_size2__lMnBD>button{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size3__1aN1S{width:8.235rem;height:2.2256rem}.ButtonTypeAWithoutIcon-module_size3__1aN1S>button{font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size4__13XYb{width:6.5881rem;height:2.2256rem}.ButtonTypeAWithoutIcon-module_size4__13XYb>button{font-size:.625rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size5__3BlpE{width:100%!important;height:3.125rem!important}.ButtonTypeAWithoutIcon-module_size5__3BlpE>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_primary__2fyl3{background-color:var(--button-type-a-without-icon-color-1);transition:.3s}.ButtonTypeAWithoutIcon-module_primary__2fyl3:hover{background-color:var(--button-type-a-without-icon-color-12)}.ButtonTypeAWithoutIcon-module_primary__2fyl3>button{color:var(--button-type-a-without-icon-color-2)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B{background-color:var(--button-type-a-without-icon-color-3)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B:hover{background-color:var(--button-type-a-without-icon-color-13)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B>button{color:var(--button-type-a-without-icon-color-4)}.ButtonTypeAWithoutIcon-module_danger__1qTV4{background-color:var(--button-type-a-without-icon-color-5)}.ButtonTypeAWithoutIcon-module_danger__1qTV4:hover{background-color:var(--button-type-a-without-icon-color-14)}.ButtonTypeAWithoutIcon-module_danger__1qTV4>button{color:var(--button-type-a-without-icon-color-6)}.ButtonTypeAWithoutIcon-module_warning__3a1rN{background-color:var(--button-type-a-without-icon-color-7)}.ButtonTypeAWithoutIcon-module_warning__3a1rN>button{color:var(--button-type-a-without-icon-color-8)}.ButtonTypeAWithoutIcon-module_none__12mm6{background-color:var(--button-type-a-without-icon-color-9)}.ButtonTypeAWithoutIcon-module_none__12mm6>button{color:var(--button-type-a-without-icon-color-10)}";
+var classes$6 = {"container-without-icon":"ButtonTypeAWithoutIcon-module_container-without-icon__39ABc","size1":"ButtonTypeAWithoutIcon-module_size1__3qpdH","size2":"ButtonTypeAWithoutIcon-module_size2__lMnBD","size3":"ButtonTypeAWithoutIcon-module_size3__1aN1S","size4":"ButtonTypeAWithoutIcon-module_size4__13XYb","size5":"ButtonTypeAWithoutIcon-module_size5__3BlpE","primary":"ButtonTypeAWithoutIcon-module_primary__2fyl3","secondary":"ButtonTypeAWithoutIcon-module_secondary__3ro5B","danger":"ButtonTypeAWithoutIcon-module_danger__1qTV4","warning":"ButtonTypeAWithoutIcon-module_warning__3a1rN","none":"ButtonTypeAWithoutIcon-module_none__12mm6"};
+styleInject(css_248z$6);
+
+var ButtonTypeAWithoutIcon = function (_a) {
+    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, ryIconSize = _a.ryIconSize, _b = _a.ryContainerAlignSelf, ryContainerAlignSelf = _b === void 0 ? 'center' : _b, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon", "ryIconSize", "ryContainerAlignSelf"]);
+    var containerOnClick1 = function (event) {
+        if (event.target === event.currentTarget) {
+            props.onClick && props.onClick(event);
+        }
+    };
+    ryContainerStyle = ryContainerStyle ? ryContainerStyle : {};
+    return (React.createElement("div", { style: Object.assign(ryContainerStyle, {
+            alignSelf: ryContainerAlignSelf,
+        }), className: classNames([
+            classes$6['container-without-icon'],
+            props.className,
+            classes$6[ryButtonType],
+            classes$6[ryButtonSize],
+        ]), onClick: containerOnClick1 },
+        React.createElement("button", __assign({}, props), ryButtonText)));
+};
+
+var Modal = function (_a) {
+    var ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryOpen = _a.ryOpen, props = __rest(_a, ["ryShowIcon", "ryLabel", "ryIcon", "ryOpen"]);
+    return ryOpen ? (React.createElement(motion.div, { className: props.ryClass },
+        React.createElement(motion.div, { initial: { y: '-200vh' }, animate: { y: 0 }, transition: { duration: 0.5 } }, props.children),
+        React.createElement(motion.div, { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.5 }, onClick: props.ryClose }))) : null;
+};
+
 var ColorInput = function (_a) {
+    var ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryColor", "ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
+    var x = function (e) {
+        if (props.onChange) {
+            props.onChange(e);
+        }
+    };
+    var _b = React.useState(false), colorPickerOpen = _b[0], setColorPickerOpen = _b[1];
+    var _c = React.useState(props.color ? props.color : '#808080'), color = _c[0], setColor = _c[1];
+    var _d = React.useState(props.color ? true : false), selectedColor = _d[0], setSelectedColor = _d[1];
+    var _e = React.useState('#FFFFFF'), inputedColor = _e[0], setInputedColor = _e[1];
+    React.useEffect(function () {
+        if (props.color) {
+            // setColor(props.color);
+            setSelectedColor(true);
+        }
+    }, [props.color]);
+    var colors = [
+        '#000000',
+        '#FFFFFF',
+        '#FF0000',
+        '#00FF00',
+        '#0000FF',
+        '#FFFF00',
+        '#00FFFF',
+        '#FF00FF',
+        '#C0C0C0',
+        '#808080',
+        '#800000',
+        '#008000',
+        '#000080',
+        '#808000',
+        '#800080',
+        '#008080',
+        '#FFC0CB',
+        '#FFA07A',
+        '#20B2AA',
+        '#87CEEB',
+        '#778899',
+        '#B0C4DE',
+        '#ADD8E6',
+        '#F08080',
+        '#E0FFFF',
+    ];
+    return (React.createElement("div", { className: classes$5['ry-root-colorinputt'], style: props.style },
+        ryLabel && React.createElement("p", { className: classes$5['ry-label-colorinputt'] }, ryLabel),
+        React.createElement("div", null,
+            React.createElement("div", { style: {
+                    backgroundColor: "" + (props.color || color),
+                }, onClick: function () {
+                    setColorPickerOpen(!colorPickerOpen);
+                }, className: classes$5['color-input-container'] }, !colorPickerOpen && (React.createElement("p", null, selectedColor && color
+                ? 'Change color'
+                : 'No color is selected please select one'))),
+            React.createElement(Modal, { ryOpen: colorPickerOpen, ryClass: classes$5['modal'], ryClose: function () { return setColorPickerOpen(false); } },
+                React.createElement("header", null),
+                React.createElement("main", null,
+                    React.createElement("div", { className: classes$5['color-picker-container'] },
+                        React.createElement("div", null, colors.map(function (el) { return (React.createElement("div", { onClick: function () {
+                                setInputedColor(el);
+                            }, style: {
+                                backgroundColor: el,
+                                width: '1.5rem',
+                                height: '1.5rem',
+                            }, className: el == inputedColor
+                                ? classes$5['color-boxx-selected']
+                                : classes$5['color-box'] })); })),
+                        React.createElement(InputTypeAWithoutIcon, { value: inputedColor, onChange: function (e) {
+                                setInputedColor(e.target.value);
+                            }, placeholder: 'Enter a date' }),
+                        React.createElement(ButtonTypeAWithoutIcon, { onClick: function () {
+                                var isColorInACorrectFormat = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/.test(inputedColor);
+                                if (isColorInACorrectFormat) {
+                                    x(inputedColor);
+                                    setColorPickerOpen(false);
+                                }
+                            }, ryButtonText: 'Save', ryButtonType: 'primary', ryButtonSize: 'size5' }),
+                        React.createElement(ButtonTypeAWithoutIcon, { onClick: function () { return setColorPickerOpen(false); }, ryButtonText: 'Close', ryButtonType: 'danger', ryButtonSize: 'size5' }))),
+                React.createElement("footer", null)))));
+};
+
+var ColorInputV2 = function (_a) {
     var ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryColor", "ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
     var x = function (e) {
         if (props.onChange) {
@@ -205,173 +318,217 @@ var ColorInput = function (_a) {
                 React.createElement("button", { onClick: function () { return setColorPickerOpen(false); } }, "Close"))))));
 };
 
-var css_248z$6 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.FileInput-module_container-file-input__f0HVT{display:flex}.FileInput-module_container-file-input__f0HVT img{box-shadow:2px 2px 10px .5px #000;width:15rem;border-radius:4px}.FileInput-module_ry-root-fileinput__1HWrH{display:flex;flex-direction:column;width:100%;justify-content:center;cursor:pointer}.FileInput-module_ry-label-fileinput__3sU-C{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;margin:0 0 .25rem}.FileInput-module_ry-container-fileinput__18T8s{display:flex;flex-direction:row;column-gap:.5rem}.FileInput-module_ry-container-fileinput__18T8s>button{border:1px solid var(--border-primarybutton-normal);background-color:var(--background-color-primarybutton-normal);border-radius:2.5px;font-size:.9375rem;color:var(--custom-color1);font-weight:500;color:var(--color-primarybutton-normal)}.FileInput-module_ry-container-fileinput__18T8s>a,.FileInput-module_ry-container-fileinput__18T8s>button{min-height:3.125rem;box-sizing:border-box;display:flex;align-items:center;font-family:Roboto;font-style:normal;margin:0;padding:0;justify-content:center;flex:1}.FileInput-module_ry-container-fileinput__18T8s>a{border:1px solid var(--border-secondarybutton-normal);background-color:var(--background-color-secondarybutton-normal);border-radius:2.5px;text-decoration:none;font-size:.7813rem;color:var(--custom-color1);font-weight:400;color:var(--color-secondarybutton-normal)}.FileInput-module_ry-container-fileinput__18T8s>a>span{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:500;margin:0;padding:0}";
-var classes$6 = {"container-file-input":"FileInput-module_container-file-input__f0HVT","ry-root-fileinput":"FileInput-module_ry-root-fileinput__1HWrH","ry-label-fileinput":"FileInput-module_ry-label-fileinput__3sU-C","ry-container-fileinput":"FileInput-module_ry-container-fileinput__18T8s"};
-styleInject(css_248z$6);
+var css_248z$7 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.FileInput-module_container-file-input__f0HVT{display:flex}.FileInput-module_container-file-input__f0HVT img{box-shadow:2px 2px 10px .5px #000;width:15rem;border-radius:4px}.FileInput-module_ry-root-fileinput__1HWrH{display:flex;flex-direction:column;width:100%;justify-content:center}.FileInput-module_ry-label-fileinput__3sU-C{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;margin:0 0 .25rem}.FileInput-module_ry-container-fileinput__18T8s{display:flex;flex-direction:row;column-gap:.5rem}.FileInput-module_ry-container-fileinput__18T8s>button{border:1px solid var(--border-primarybutton-normal);background-color:var(--background-color-primarybutton-normal);border-radius:2.5px;font-size:.9375rem;color:var(--custom-color1);font-weight:500;color:var(--color-primarybutton-normal)}.FileInput-module_ry-container-fileinput__18T8s>a,.FileInput-module_ry-container-fileinput__18T8s>button{min-height:3.125rem;box-sizing:border-box;display:flex;align-items:center;font-family:Roboto;font-style:normal;margin:0;padding:0;justify-content:center;flex:1}.FileInput-module_ry-container-fileinput__18T8s>a{border:1px solid var(--border-secondarybutton-normal);background-color:var(--background-color-secondarybutton-normal);border-radius:2.5px;text-decoration:none;font-size:.7813rem;color:var(--custom-color1);font-weight:400;color:var(--color-secondarybutton-normal)}.FileInput-module_ry-container-fileinput__18T8s>a>span{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:500;margin:0;padding:0}";
+var classes$7 = {"container-file-input":"FileInput-module_container-file-input__f0HVT","ry-root-fileinput":"FileInput-module_ry-root-fileinput__1HWrH","ry-label-fileinput":"FileInput-module_ry-label-fileinput__3sU-C","ry-container-fileinput":"FileInput-module_ry-container-fileinput__18T8s"};
+styleInject(css_248z$7);
 
 var FileInput = function (_a) {
-    var ryLink = _a.ryLink, ryExistingFile = _a.ryExistingFile, ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, rylabel = _a.rylabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryLink", "ryExistingFile", "ryColor", "ryShowIcon", "rylabel", "ryIcon", "ryImage"]);
+    var ryLink = _a.ryLink, ryExistingFile = _a.ryExistingFile, ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, rylabel = _a.rylabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, ryDefaultValue = _a.ryDefaultValue, props = __rest(_a, ["ryLink", "ryExistingFile", "ryColor", "ryShowIcon", "rylabel", "ryIcon", "ryImage", "ryDefaultValue"]);
     //  const inputRef: React.Ref = React.useRef(null) ;
     var inputRef = React.useRef(null);
-    return (React.createElement("div", { className: classes$6['ry-root-fileinput'], style: props.style },
-        rylabel && React.createElement("p", { className: classes$6['ry-label-fileinput'] }, rylabel),
-        React.createElement("div", { className: classes$6['ry-container-fileinput'] },
-            React.createElement("button", { onClick: function () {
+    var _b = React.useState(''), updated = _b[0], setUpdated = _b[1];
+    return (React.createElement("div", { className: classes$7['ry-root-fileinput'], style: props.style },
+        rylabel && React.createElement("p", { className: classes$7['ry-label-fileinput'] }, rylabel),
+        React.createElement("div", { className: classes$7['ry-container-fileinput'] },
+            React.createElement("button", { style: { cursor: 'pointer' }, onClick: function () {
                     if (inputRef && inputRef.current) {
                         inputRef.current.click();
                     }
-                } }, "Upload File"),
-            ryExistingFile !== "No file" && React.createElement("a", { href: ryLink },
+                } },
+                "Upload File\u00A0",
+                React.createElement("span", { style: { color: 'rgba(0,0,0,.5)' } },
+                    "\"",
+                    updated ? updated : 'No File',
+                    "\"")),
+            ryExistingFile !== 'No file' && (React.createElement("a", { href: ryLink },
                 React.createElement("span", null, "Download\u00A0"),
-                ryExistingFile),
+                ryExistingFile)),
             React.createElement("input", { ref: inputRef, style: { display: 'none' }, onChange: function (e) {
                     // props.onChange(inputRef.current.files[0])
+                    setUpdated(e.target.files[0].name);
                     if (props.onChange) {
                         props.onChange(e);
                     }
                 }, type: "file" }))));
 };
 
-var css_248z$7 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Select-module_big-container__2ZKJ9{display:flex;flex-direction:column;align-self:flex-end;border:none;background-color:var(--select-type-a-with-icon-color-1);border-bottom:1px solid var(--select-type-a-with-icon-color-2);color:var(--select-type-a-with-icon-color-3)}.Select-module_big-container__2ZKJ9>p{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:#000;margin:0 0 .25rem}.Select-module_select__23ccj{align-self:flex-end}.Select-module_select__23ccj:hover [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:hover [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:focus-within [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:focus-within [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj [class$=-control]{border:none;background-color:var(--select-type-a-with-icon-color-1);border-bottom:1px solid var(--select-type-a-with-icon-color-2);color:var(--select-type-a-with-icon-color-3);box-sizing:border-box}.Select-module_select__23ccj [class$=-control]:focus-within{outline:none;border:none;box-shadow:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.Select-module_select__23ccj [class$=-control]:hover{border-color:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.Select-module_select__23ccj [class$=menu]{margin-left:.5px;cursor:pointer}.Select-module_select__23ccj [class$=MenuList]{padding-top:unset;padding-bottom:unset}.Select-module_select__23ccj [class$=option]{background-color:unset;margin-top:unset;color:#000;cursor:pointer}.Select-module_select__23ccj [class$=option]:hover{background-color:rgba(0,0,0,.045);color:#000}.Select-module_select__23ccj [class$=option]:focus{background-color:red}.Select-module_select__23ccj [class$=option]:focus-within{background-color:red}.Select-module_select__23ccj [class$=option]:focus-visible{background-color:red}.Select-module_select__23ccj [class$=option]:active{background-color:rgba(0,0,0,.125)}.Select-module_select__23ccj [class$=option]:any-link,.Select-module_select__23ccj [class$=option]:visited{background-color:red}.Select-module_select__23ccj [class$=option]::selection{background-color:red}";
-var classes$7 = {"big-container":"Select-module_big-container__2ZKJ9","select":"Select-module_select__23ccj"};
-styleInject(css_248z$7);
+var css_248z$8 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Select-module_big-container__2ZKJ9{display:flex;flex-direction:column;align-self:flex-end;border:none;background-color:var(--select-type-a-with-icon-color-1);border-bottom:1px solid var(--select-type-a-with-icon-color-2);color:var(--select-type-a-with-icon-color-3)}.Select-module_big-container__2ZKJ9>p{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:#000;margin:0 0 .25rem}.Select-module_select-container__2P_HU{display:flex;flex-direction:column}.Select-module_select-container__2P_HU .Select-module_ry-label-input__h9SOd{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;margin:0 0 .25rem;color:var(--input-type-a-with-icon-color-1)}.Select-module_ry-root-input__Q_8Jm{display:flex;flex-direction:column;transition:.3s}.Select-module_ry-label-input__h9SOd{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:var(--input-type-a-without-icon-color-1);margin:0 0 .25rem}.Select-module_select__23ccj:hover [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:hover [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:focus-within [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj:focus-within [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.Select-module_select__23ccj [class$=-control]{min-height:3.125rem;border:none;background-color:var(--select-type-a-with-icon-color-1);border-bottom:1px solid var(--select-type-a-with-icon-color-2);color:var(--select-type-a-with-icon-color-3);box-sizing:border-box}.Select-module_select__23ccj [class$=-control]:focus-within{outline:none;border:none;box-shadow:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.Select-module_select__23ccj [class$=-control]:hover{border-color:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.Select-module_select__23ccj [class$=menu]{margin-left:.5px;cursor:pointer}.Select-module_select__23ccj [class$=MenuList]{padding-top:unset;padding-bottom:unset}.Select-module_select__23ccj [class$=option]{background-color:unset;margin-top:unset;color:#000;cursor:pointer}.Select-module_select__23ccj [class$=option]:hover{background-color:rgba(0,0,0,.045);color:#000}.Select-module_select__23ccj [class$=option]:focus{background-color:red}.Select-module_select__23ccj [class$=option]:focus-within{background-color:red}.Select-module_select__23ccj [class$=option]:focus-visible{background-color:red}.Select-module_select__23ccj [class$=option]:active{background-color:rgba(0,0,0,.125)}.Select-module_select__23ccj [class$=option]:any-link,.Select-module_select__23ccj [class$=option]:visited{background-color:red}.Select-module_select__23ccj [class$=option]::selection{background-color:red}";
+var classes$8 = {"big-container":"Select-module_big-container__2ZKJ9","select-container":"Select-module_select-container__2P_HU","ry-label-input":"Select-module_ry-label-input__h9SOd","ry-root-input":"Select-module_ry-root-input__Q_8Jm","select":"Select-module_select__23ccj"};
+styleInject(css_248z$8);
 
 var Select = function (_a) {
     var props = __rest(_a, []);
-    return (React.createElement(Selectt, { defaultValue: props.ryoptions.filter(function (_a) {
-            var value = _a.value;
-            return value === props.rydefaultvalue;
-        }), className: classes$7['select'], options: props.ryoptions, onChange: props.ryonChange, placeholder: props.ryplaceholder }));
+    return (React.createElement("div", { className: classes$8['ry-root-input'] },
+        props.rylabel && (React.createElement("p", { className: classes$8['ry-label-input'] }, props.rylabel)),
+        React.createElement(Selectt, { value: props.ryoptions.find(function (el) {
+                return el.value === props.rydefaultvalue;
+            }), className: classes$8['select'], options: props.ryoptions, onChange: props.ryonChange, placeholder: props.ryplaceholder })));
 };
 
-var css_248z$8 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Dropdown-module_divv__hQ6yi{display:flex;flex-direction:column;position:relative;cursor:pointer}.Dropdown-module_divv__hQ6yi>div:first-child{display:flex}.Dropdown-module_x__2-MTf{height:100%;width:100%;align-items:center;display:flex;justify-content:center}.Dropdown-module_after__1bKXn{right:0;overflow:visible;display:block;flex-direction:column;position:sticky;top:30px;right:20px;background-color:hsla(0,0%,100%,.952);box-shadow:0 0 4px 1px rgba(0,0,0,.35);padding:1rem;z-index:2}";
-var classes$8 = {"divv":"Dropdown-module_divv__hQ6yi","x":"Dropdown-module_x__2-MTf","after":"Dropdown-module_after__1bKXn"};
-styleInject(css_248z$8);
+var css_248z$9 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.Dropdown-module_divv__hQ6yi{display:flex;flex-direction:column;position:relative;cursor:pointer}.Dropdown-module_divv__hQ6yi>div:first-child{display:flex}.Dropdown-module_x__2-MTf{height:100%;width:100%;align-items:center;display:flex;justify-content:center}.Dropdown-module_after__1bKXn{right:0;overflow:visible;display:block;flex-direction:column;position:sticky;top:30px;right:20px;background-color:hsla(0,0%,100%,.952);box-shadow:0 0 4px 1px rgba(0,0,0,.35);padding:1rem;z-index:2}";
+var classes$9 = {"divv":"Dropdown-module_divv__hQ6yi","x":"Dropdown-module_x__2-MTf","after":"Dropdown-module_after__1bKXn"};
+styleInject(css_248z$9);
 
 var Dropdown = function (_a) {
     var ryShowIcon = _a.ryShowIcon, ryStyle = _a.ryStyle, ryAlign = _a.ryAlign, ryIcon = _a.ryIcon, ryText = _a.ryText, props = __rest(_a, ["ryShowIcon", "ryStyle", "ryAlign", "ryIcon", "ryText"]);
     // const [open, setOpen] = React.useState(false);
     var _b = React.useState(true), open = _b[0], setOpen = _b[1];
-    return (React.createElement("div", { className: classes$8['divv'], onBlur: function () {
+    return (React.createElement("div", { className: classes$9['divv'], onBlur: function () {
             setOpen(false);
         }, tabIndex: 0 },
         React.createElement("div", { onClick: function (e) {
                 setOpen(true);
-            }, className: classes$8['x'] }, props.before),
-        open === true && (React.createElement("div", { className: classes$8['after'], onMouseDown: function (e) { return e.preventDefault(); } }, props.children))));
+            }, className: classes$9['x'] }, props.before),
+        open === true && (React.createElement("div", { className: classes$9['after'], onMouseDown: function (e) { return e.preventDefault(); } }, props.children))));
 };
 
-var Modal = function (_a) {
-    var ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryOpen = _a.ryOpen, props = __rest(_a, ["ryShowIcon", "ryLabel", "ryIcon", "ryOpen"]);
-    return ryOpen ? (React.createElement(motion.div, { className: props.ryClass },
-        React.createElement(motion.div, { initial: { y: '-200vh' }, animate: { y: 0 }, transition: { duration: 0.5 } }, props.children),
-        React.createElement(motion.div, { initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { duration: 0.5 }, onClick: props.ryClose }))) : null;
-};
+var css_248z$a = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.CalendarInput-module_ry-root-calendarinput__3WrdY{display:flex;flex-direction:column;width:min-content;flex:1}.CalendarInput-module_ry-root-calendarinput__3WrdY .CalendarInput-module_ry-label-calendarinput__3TsGI{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:#000;margin:0 0 .25rem}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se{display:flex;flex:1;width:100%;border:none;box-sizing:border-box;border-radius:2.5px;border:1px solid var(--border-input-normal);background-color:var(--background-color-input-normal);background-color:transparent;border-top:none;border-right:none;border-left:none;min-height:3.125rem;column-gap:1rem}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se .CalendarInput-module_select__1HIXU{flex:1}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se>svg{padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:2.5px;border-top-left-radius:2.5px;height:unset!important}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se>svg>path{fill:#000}.CalendarInput-module_ry-day-select-calendarinput__2heiM{flex:1}.CalendarInput-module_ry-day-select-calendarinput__2heiM,.CalendarInput-module_ry-month-select-calendarinput__3FfUG{background-color:transparent;font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;text-align:start;color:#000;padding:0 0 0 10px;box-sizing:border-box;border:none}.CalendarInput-module_ry-month-select-calendarinput__3FfUG{flex:1;flex:2}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem;height:3.125rem}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y>svg path{fill:#686868}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border:1px solid #dedede;border-right:none}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y:focus-within>input{border:1px solid #ccc}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y:focus-within>svg{border:1px solid #ccc;border-right:none}.CalendarInput-module_select__1HIXU:hover [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.CalendarInput-module_select__1HIXU:hover [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.CalendarInput-module_select__1HIXU:focus-within [class$=indicatorContainer]{color:var(--select-type-a-with-icon-color-6)}.CalendarInput-module_select__1HIXU:focus-within [class$=indicatorSeparator]{background-color:var(--select-type-a-with-icon-color-6)}.CalendarInput-module_select__1HIXU [class$=-control]{min-height:3.125rem;border:none;background-color:var(--select-type-a-with-icon-color-1);border-bottom:1px solid var(--select-type-a-with-icon-color-2);color:var(--select-type-a-with-icon-color-3);box-sizing:border-box}.CalendarInput-module_select__1HIXU [class$=-control]:focus-within{outline:none;border:none;box-shadow:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.CalendarInput-module_select__1HIXU [class$=-control]:hover{border-color:unset;border-bottom:1px solid var(--select-type-a-with-icon-color-4);box-sizing:border-box}.CalendarInput-module_select__1HIXU [class$=menu]{margin-left:.5px;cursor:pointer}.CalendarInput-module_select__1HIXU [class$=MenuList]{padding-top:unset;padding-bottom:unset}.CalendarInput-module_select__1HIXU [class$=option]{background-color:unset;margin-top:unset;color:#000;cursor:pointer}.CalendarInput-module_select__1HIXU [class$=option]:hover{background-color:rgba(0,0,0,.045);color:#000}.CalendarInput-module_select__1HIXU [class$=option]:focus{background-color:red}.CalendarInput-module_select__1HIXU [class$=option]:focus-within{background-color:red}.CalendarInput-module_select__1HIXU [class$=option]:focus-visible{background-color:red}.CalendarInput-module_select__1HIXU [class$=option]:active{background-color:rgba(0,0,0,.125)}.CalendarInput-module_select__1HIXU [class$=option]:any-link,.CalendarInput-module_select__1HIXU [class$=option]:visited{background-color:red}.CalendarInput-module_select__1HIXU [class$=option]::selection{background-color:red}";
+var classes$a = {"ry-root-calendarinput":"CalendarInput-module_ry-root-calendarinput__3WrdY","ry-label-calendarinput":"CalendarInput-module_ry-label-calendarinput__3TsGI","ry-container-with-image-calendarinput":"CalendarInput-module_ry-container-with-image-calendarinput__2J1Se","select":"CalendarInput-module_select__1HIXU","ry-day-select-calendarinput":"CalendarInput-module_ry-day-select-calendarinput__2heiM","ry-month-select-calendarinput":"CalendarInput-module_ry-month-select-calendarinput__3FfUG","ry-container-without-image-calendarinput":"CalendarInput-module_ry-container-without-image-calendarinput__29a4y"};
+styleInject(css_248z$a);
 
-var css_248z$9 = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.CalendarInput-module_ry-root-calendarinput__3WrdY{display:flex;flex-direction:column;width:min-content;flex:1}.CalendarInput-module_ry-root-calendarinput__3WrdY .CalendarInput-module_ry-label-calendarinput__3TsGI{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:#000;margin:0 0 .25rem}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se{display:flex;flex:1;width:100%;border:none;box-sizing:border-box;border-radius:2.5px;border:1px solid var(--border-input-normal);background-color:var(--background-color-input-normal);background-color:transparent;border-top:none;border-right:none;border-left:none;min-height:3.125rem}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se>svg{padding:.75rem 1.25rem;width:.75rem;height:auto;border-bottom-left-radius:2.5px;border-top-left-radius:2.5px;height:unset!important}.CalendarInput-module_ry-container-with-image-calendarinput__2J1Se>svg>path{fill:var(--fill-input-normal)}.CalendarInput-module_ry-day-select-calendarinput__2heiM{flex:1}.CalendarInput-module_ry-day-select-calendarinput__2heiM,.CalendarInput-module_ry-month-select-calendarinput__3FfUG{background-color:transparent;font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;text-align:start;color:#000;padding:0 0 0 10px;box-sizing:border-box;border:none}.CalendarInput-module_ry-month-select-calendarinput__3FfUG{flex:1;flex:2}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y{display:flex;flex:1;box-sizing:border-box;background:#fff;border-radius:5px;max-height:2.5rem;height:3.125rem}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y>svg path{fill:#686868}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y>svg{background-color:#eee;padding:.75rem 1.25rem;width:.75rem;height:auto;border:1px solid #dedede;border-right:none}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y:focus-within>input{border:1px solid #ccc}.CalendarInput-module_ry-container-without-image-calendarinput__29a4y:focus-within>svg{border:1px solid #ccc;border-right:none}";
-var classes$9 = {"ry-root-calendarinput":"CalendarInput-module_ry-root-calendarinput__3WrdY","ry-label-calendarinput":"CalendarInput-module_ry-label-calendarinput__3TsGI","ry-container-with-image-calendarinput":"CalendarInput-module_ry-container-with-image-calendarinput__2J1Se","ry-day-select-calendarinput":"CalendarInput-module_ry-day-select-calendarinput__2heiM","ry-month-select-calendarinput":"CalendarInput-module_ry-month-select-calendarinput__3FfUG","ry-container-without-image-calendarinput":"CalendarInput-module_ry-container-without-image-calendarinput__29a4y"};
-styleInject(css_248z$9);
-
-var days = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10',
-    '11',
-    '12',
-    '13',
-    '14',
-    '15',
-    '16',
-    '17',
-    '18',
-    '19',
-    '20',
-    '21',
-    '22',
-    '23',
-    '24',
-    '25',
-    '26',
-    '27',
-    '28',
-    '29',
-    '30',
-    '31',
-];
-var months = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jul',
-    'Jun',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-];
 var CalendarInput = function (_a) {
     var ryShowIcon = _a.ryShowIcon, ryDateOnChange = _a.ryDateOnChange, ryDateValue = _a.ryDateValue, ryType = _a.ryType, rylabel = _a.rylabel, ryIcon = _a.ryIcon, ryimage = _a.ryimage, props = __rest(_a, ["ryShowIcon", "ryDateOnChange", "ryDateValue", "ryType", "rylabel", "ryIcon", "ryimage"]);
-    var _b = React.useState(ryDateValue && ryDateValue.split(' ')[0]), selectedDay = _b[0], setSelectedDay = _b[1];
-    var _c = React.useState(ryDateValue && ryDateValue.split(' ')[1]), selectedMonth = _c[0], setSelectedMonth = _c[1];
-    var _d = React.useState(false), changed = _d[0], setChanged = _d[1];
+    var _b = React.useState(ryDateValue ? ryDateValue.split(' ')[0] : 'Select'), selectedDay = _b[0], setSelectedDay = _b[1];
+    var _c = React.useState(ryDateValue ? ryDateValue.split(' ')[1] : 'Select'), selectedMonth = _c[0], setSelectedMonth = _c[1];
     React.useEffect(function () {
-        if (ryDateValue) {
-            if (selectedDay !== ryDateValue.split(' ')[0] ||
-                selectedMonth !== ryDateValue.split(' ')[1]) {
-                setChanged(true);
-            }
-            if (selectedDay !== '' && selectedMonth !== '' && changed) {
-                ryDateOnChange(selectedDay + " " + selectedMonth);
-            }
-        }
-    }, [selectedDay, selectedMonth]);
+        console.log("ryDateValue " + ryDateValue);
+        console.log("rylabel " + rylabel);
+        console.log(ryDateValue && ryDateValue.split(' ')[1]);
+        setSelectedMonth(ryDateValue ? ryDateValue.split(' ')[1] : 'Select');
+        setSelectedDay(ryDateValue ? ryDateValue.split(' ')[0] : 'Select');
+    }, [ryDateValue]);
+    var monthsWith = ['4', '6', '9', '11'];
+    // index == 1 ||
+    // index == 3 ||
+    // index == 5 ||
+    // index == 7 ||
+    // index == 8 ||
+    // index == 10 ||
+    // index == 12
+    var months = [
+        { value: 'Select', label: 'Select' },
+        { value: '1', label: 'Jan' },
+        { value: '2', label: 'Feb' },
+        { value: '3', label: 'Mar' },
+        { value: '4', label: 'Apr' },
+        { value: '5', label: 'May' },
+        { value: '6', label: 'Jul' },
+        { value: '7', label: 'Jun' },
+        { value: '8', label: 'Aug' },
+        { value: '9', label: 'Sep' },
+        { value: '10', label: 'Oct' },
+        { value: '11', label: 'Nov' },
+        { value: '12', label: 'Dec' },
+    ];
+    var _d = React.useState([
+        { value: 'Select', label: 'Select', disabled: true },
+        { value: '1', label: '1', disabled: true },
+        { value: '2', label: '2', disabled: true },
+        { value: '3', label: '3', disabled: true },
+        { value: '4', label: '4', disabled: true },
+        { value: '5', label: '5', disabled: true },
+        { value: '6', label: '6', disabled: true },
+        { value: '7', label: '7', disabled: true },
+        { value: '8', label: '8', disabled: true },
+        { value: '9', label: '9', disabled: true },
+        { value: '10', label: '10', disabled: true },
+        { value: '11', label: '11', disabled: true },
+        { value: '12', label: '12', disabled: true },
+        { value: '14', label: '14', disabled: true },
+        { value: '15', label: '15', disabled: true },
+        { value: '16', label: '16', disabled: true },
+        { value: '17', label: '17', disabled: true },
+        { value: '18', label: '18', disabled: true },
+        { value: '19', label: '19', disabled: true },
+        { value: '20', label: '20', disabled: true },
+        { value: '21', label: '21', disabled: true },
+        { value: '22', label: '22', disabled: true },
+        { value: '23', label: '23', disabled: true },
+        { value: '24', label: '24', disabled: true },
+        { value: '25', label: '25', disabled: true },
+        { value: '26', label: '26', disabled: true },
+        { value: '27', label: '27', disabled: true },
+        { value: '28', label: '28', disabled: true },
+        { value: '29', label: '29', disabled: true },
+        { value: '30', label: '30', disabled: true },
+        {
+            value: '31',
+            label: '31',
+            disabled: monthsWith.find(function (el) { return el == selectedMonth; }),
+        },
+    ]), days = _d[0], setDays = _d[1];
     React.useEffect(function () {
-        if (changed == true) {
-            ryDateOnChange(selectedDay + " " + selectedMonth);
+        setDays([
+            { value: 'Select', label: 'Select', disabled: false },
+            { value: '1', label: '1', disabled: false },
+            { value: '2', label: '2', disabled: false },
+            { value: '3', label: '3', disabled: false },
+            { value: '4', label: '4', disabled: false },
+            { value: '5', label: '5', disabled: false },
+            { value: '6', label: '6', disabled: false },
+            { value: '7', label: '7', disabled: false },
+            { value: '8', label: '8', disabled: false },
+            { value: '9', label: '9', disabled: false },
+            { value: '10', label: '10', disabled: false },
+            { value: '11', label: '11', disabled: false },
+            { value: '12', label: '12', disabled: false },
+            { value: '14', label: '14', disabled: false },
+            { value: '15', label: '15', disabled: false },
+            { value: '16', label: '16', disabled: false },
+            { value: '17', label: '17', disabled: false },
+            { value: '18', label: '18', disabled: false },
+            { value: '19', label: '19', disabled: false },
+            { value: '20', label: '20', disabled: false },
+            { value: '21', label: '21', disabled: false },
+            { value: '22', label: '22', disabled: false },
+            { value: '23', label: '23', disabled: false },
+            { value: '24', label: '24', disabled: false },
+            { value: '25', label: '25', disabled: false },
+            { value: '26', label: '26', disabled: false },
+            { value: '27', label: '27', disabled: false },
+            { value: '28', label: '28', disabled: false },
+            { value: '29', label: '29', disabled: false },
+            {
+                value: '30',
+                label: '30',
+                disabled: selectedMonth == '2',
+            },
+            {
+                value: '31',
+                label: '31',
+                disabled: monthsWith.find(function (el) { return el == selectedMonth; }) || selectedMonth == '2',
+            },
+        ]);
+    }, [selectedMonth]);
+    var _e = React.useState(false), changed = _e[0], setChanged = _e[1];
+    React.useEffect(function () {
+        if (changed == true &&
+            selectedMonth !== 'Select' &&
+            selectedDay !== 'Select') {
+            ryDateOnChange(days[+selectedDay].value + " " + months[+selectedMonth].value);
             setChanged(false);
         }
-    }, [changed]);
-    return (React.createElement("div", { className: classes$9['ry-root-calendarinput'] },
-        rylabel && (React.createElement("p", { className: classes$9['ry-label-calendarinput'] }, rylabel)),
+    }, [selectedDay, selectedMonth]);
+    React.useEffect(function () { }, [changed]);
+    return (React.createElement("div", { className: classes$a['ry-root-calendarinput'] },
+        rylabel && (React.createElement("p", { className: classes$a['ry-label-calendarinput'] }, rylabel)),
         React.createElement("div", { className: ryimage
-                ? classes$9['ry-container-with-image-calendarinput']
-                : classes$9['ry-container-without-image-calendarinput'] },
+                ? classes$a['ry-container-with-image-calendarinput']
+                : classes$a['ry-container-without-image-calendarinput'] },
             ryimage,
-            React.createElement("select", { className: classes$9['ry-day-select-calendarinput'], onChange: function (e) { return setSelectedDay(e.target.value); }, value: selectedDay },
-                React.createElement("option", { value: days[0] }, days[0]),
-                selectedMonth != '' &&
-                    days.map(function (day, indexx) {
-                        if (indexx > 0) {
-                            var index = months.findIndex(function (month) { return month == selectedMonth; });
-                            if (index == 0 ||
-                                index == 2 ||
-                                index == 4 ||
-                                index == 6 ||
-                                index == 7 ||
-                                index == 9 ||
-                                index == 11) {
-                                return (React.createElement("option", { key: Math.random(), value: day }, day));
-                            }
-                            else if (index == 1) {
-                                return (React.createElement("option", { key: Math.random(), disabled: day == '31' || day == '30' || day == '29', value: day }, day));
-                            }
-                            else {
-                                return (React.createElement("option", { key: Math.random(), disabled: day == '31', value: day }, day));
-                            }
-                        }
-                    })),
-            React.createElement("select", { className: classes$9['ry-month-select-calendarinput'], onChange: function (e) { return setSelectedMonth(e.target.value); }, value: selectedMonth }, months.map(function (month) { return (React.createElement("option", { key: Math.random(), value: month }, month)); })))));
+            React.createElement(Selectt, { className: classes$a['select'], options: days, defaultValue: days.find(function (el) { return selectedDay == el.value; }), isOptionDisabled: function (option) { return option.disabled; }, onChange: function (ee) {
+                    setSelectedDay(ee.value);
+                    setChanged(true);
+                } }),
+            React.createElement(Selectt, { className: classes$a['select'], options: months, defaultValue: months.find(function (el) { return selectedMonth == el.value; }), onChange: function (ee) {
+                    setSelectedMonth(ee.value);
+                    setChanged(true);
+                } }))));
 };
+
+var css_248z$b = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ImageInput-module_ry-root-input__NMh58{display:flex;flex-direction:column;transition:.3s}.ImageInput-module_ry-label-input__2UG5A{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;padding:0;color:var(--input-type-a-without-icon-color-1);margin:0 0 .25rem}.ImageInput-module_ry-input-without-image__ucO_R{font-size:.9375rem;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;display:flex;min-height:3.125rem;border:none;border-bottom:1px solid var(--input-type-a-without-icon-color-2);color:var(--input-type-a-without-icon-color-3);background-color:transparent;border-radius:2.5px;box-sizing:border-box;padding:0 0 0 10px}.ImageInput-module_ry-input-without-image__ucO_R::placeholder{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:400;margin:0;padding:0;color:var(--input-type-a-without-icon-color-4);transition:.1s}.ImageInput-module_ry-input-without-image__ucO_R:focus-within{outline:none;color:var(--input-type-a-without-icon-color-5);border-bottom:1px solid var(--input-type-a-without-icon-color-6)}.ImageInput-module_ry-input-without-image__ucO_R:focus-within::placeholder{color:var(--input-type-a-without-icon-color-7)}.ImageInput-module_container-file-input__A4c50{position:relative;border-radius:2.5px}.ImageInput-module_container-file-input__A4c50 .ImageInput-module_edit-image-small-button__2beYu{width:100%;height:100%;background-color:rgba(0,0,0,.2);backdrop-filter:blur(2px);position:absolute;display:flex;align-items:center;justify-content:center}.ImageInput-module_container-file-input__A4c50 .ImageInput-module_edit-image-small-button__2beYu>button{background-color:transparent;border:none;font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;color:#fff;background-color:rgba(0,0,0,.4);padding:1rem;border-radius:2.5px}";
+var classes$b = {"ry-root-input":"ImageInput-module_ry-root-input__NMh58","ry-label-input":"ImageInput-module_ry-label-input__2UG5A","ry-input-without-image":"ImageInput-module_ry-input-without-image__ucO_R","container-file-input":"ImageInput-module_container-file-input__A4c50","edit-image-small-button":"ImageInput-module_edit-image-small-button__2beYu"};
+styleInject(css_248z$b);
 
 var ImageInput = function (_a) {
     var ryLink = _a.ryLink, ryExistingFile = _a.ryExistingFile, ryColor = _a.ryColor, ryShowIcon = _a.ryShowIcon, ryLabel = _a.ryLabel, ryIcon = _a.ryIcon, ryImage = _a.ryImage, props = __rest(_a, ["ryLink", "ryExistingFile", "ryColor", "ryShowIcon", "ryLabel", "ryIcon", "ryImage"]);
@@ -386,9 +543,9 @@ var ImageInput = function (_a) {
         };
         reader.readAsDataURL(selectedFile);
     }
-    return (React.createElement("div", { className: classes$1['file-input-component'], style: props.style },
-        ryLabel && React.createElement("p", { className: classes$1['label-file-input'] }, ryLabel),
-        React.createElement("div", { className: classes$1['container-file-input'] },
+    return (React.createElement("div", { className: classes$b['file-input-component'], style: props.style },
+        ryLabel && React.createElement("p", { className: classes$b['label-file-input'] }, ryLabel),
+        React.createElement("div", { className: classes$b['container-file-input'] },
             React.createElement("img", { id: "myimage", onClick: function () {
                     if (inputRef && inputRef.current) {
                         inputRef.current.click();
@@ -400,12 +557,18 @@ var ImageInput = function (_a) {
                         props.onChange(e);
                     }
                     onFileSelected(e);
-                }, type: "file" }))));
+                }, type: "file" }),
+            React.createElement("div", { onClick: function () {
+                    if (inputRef && inputRef.current) {
+                        inputRef.current.click();
+                    }
+                }, className: classes$b['edit-image-small-button'] },
+                React.createElement("button", null, "Click on the image to update it")))));
 };
 
-var css_248z$a = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ButtonTypeAWithIcon-module_container-with-icon__2_laN{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:.1563rem;transition:.2s;border-top-left-radius:.1563rem;border-bottom-left-radius:.1563rem;column-gap:1rem}.ButtonTypeAWithIcon-module_container-with-icon__2_laN button{background-color:transparent;border:none;cursor:pointer;padding:0}.ButtonTypeAWithIcon-module_container-with-icon__2_laN:hover>div:first-child{border-top-right-radius:50%;border-bottom-right-radius:50%}.ButtonTypeAWithIcon-module_container-with-icon__2_laN>svg{width:1.0938rem;height:1.0938rem}.ButtonTypeAWithIcon-module_container-with-icon__2_laN>svg path{fill:#fff}.ButtonTypeAWithIcon-module_size1__3XkPS{width:11.5625rem;height:3.125rem}.ButtonTypeAWithIcon-module_size1__3XkPS>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size2__eOqbY{width:9.8856rem;height:2.5rem}.ButtonTypeAWithIcon-module_size2__eOqbY>button{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size3__31PM5{width:8.235rem;height:2.2256rem}.ButtonTypeAWithIcon-module_size3__31PM5>button{font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size4__XIKyH{width:6.5881rem;height:2.2256rem}.ButtonTypeAWithIcon-module_size4__XIKyH>button{font-size:.625rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size5__2ekQv{width:100%!important;height:3.125rem!important}.ButtonTypeAWithIcon-module_size5__2ekQv>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size6__2_MGF{width:100%!important;height:100%!important}.ButtonTypeAWithIcon-module_size6__2_MGF>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_primary__3feQa{background-color:var(--button-type-a-with-icon-color-1)}.ButtonTypeAWithIcon-module_primary__3feQa:hover{background-color:var(--button-type-a-with-icon-color-12)}.ButtonTypeAWithIcon-module_primary__3feQa>button{color:var(--button-type-a-with-icon-color-2)}.ButtonTypeAWithIcon-module_secondary__3H3s_{background-color:var(--button-type-a-with-icon-color-3)}.ButtonTypeAWithIcon-module_secondary__3H3s_>button{color:var(--button-type-a-with-icon-color-4)}.ButtonTypeAWithIcon-module_danger__2gsi8{background-color:var(--button-type-a-with-icon-color-5)}.ButtonTypeAWithIcon-module_danger__2gsi8>button{color:var(--button-type-a-with-icon-color-6)}.ButtonTypeAWithIcon-module_warning__2v1qA{background-color:var(--button-type-a-with-icon-color-7)}.ButtonTypeAWithIcon-module_warning__2v1qA>button{color:var(--button-type-a-with-icon-color-8)}.ButtonTypeAWithIcon-module_none__fYzlE{background-color:var(--button-type-a-with-icon-color-9)}.ButtonTypeAWithIcon-module_none__fYzlE>button{color:var(--button-type-a-with-icon-color-10)}";
-var classes$a = {"container-with-icon":"ButtonTypeAWithIcon-module_container-with-icon__2_laN","size1":"ButtonTypeAWithIcon-module_size1__3XkPS","size2":"ButtonTypeAWithIcon-module_size2__eOqbY","size3":"ButtonTypeAWithIcon-module_size3__31PM5","size4":"ButtonTypeAWithIcon-module_size4__XIKyH","size5":"ButtonTypeAWithIcon-module_size5__2ekQv","size6":"ButtonTypeAWithIcon-module_size6__2_MGF","primary":"ButtonTypeAWithIcon-module_primary__3feQa","secondary":"ButtonTypeAWithIcon-module_secondary__3H3s_","danger":"ButtonTypeAWithIcon-module_danger__2gsi8","warning":"ButtonTypeAWithIcon-module_warning__2v1qA","none":"ButtonTypeAWithIcon-module_none__fYzlE"};
-styleInject(css_248z$a);
+var css_248z$c = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ButtonTypeAWithIcon-module_container-with-icon__2_laN{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:.1563rem;transition:.2s;border-top-left-radius:.1563rem;border-bottom-left-radius:.1563rem;column-gap:1rem}.ButtonTypeAWithIcon-module_container-with-icon__2_laN button{background-color:transparent;border:none;cursor:pointer;padding:0}.ButtonTypeAWithIcon-module_container-with-icon__2_laN:hover>div:first-child{border-top-right-radius:50%;border-bottom-right-radius:50%}.ButtonTypeAWithIcon-module_container-with-icon__2_laN>svg{width:1.0938rem;height:1.0938rem}.ButtonTypeAWithIcon-module_container-with-icon__2_laN>svg path{fill:#fff}.ButtonTypeAWithIcon-module_size1__3XkPS{width:11.5625rem;height:3.125rem}.ButtonTypeAWithIcon-module_size1__3XkPS>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size2__eOqbY{width:9.8856rem;height:2.5rem}.ButtonTypeAWithIcon-module_size2__eOqbY>button{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size3__31PM5{width:8.235rem;height:2.2256rem}.ButtonTypeAWithIcon-module_size3__31PM5>button{font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size4__XIKyH{width:6.5881rem;height:2.2256rem}.ButtonTypeAWithIcon-module_size4__XIKyH>button{font-size:.625rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size5__2ekQv{width:100%!important;height:3.125rem!important}.ButtonTypeAWithIcon-module_size5__2ekQv>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_size6__2_MGF{width:100%!important;height:100%!important}.ButtonTypeAWithIcon-module_size6__2_MGF>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithIcon-module_primary__3feQa{background-color:var(--button-type-a-with-icon-color-1)}.ButtonTypeAWithIcon-module_primary__3feQa:hover{background-color:var(--button-type-a-with-icon-color-12)}.ButtonTypeAWithIcon-module_primary__3feQa>button{color:var(--button-type-a-with-icon-color-2)}.ButtonTypeAWithIcon-module_secondary__3H3s_{background-color:var(--button-type-a-with-icon-color-3)}.ButtonTypeAWithIcon-module_secondary__3H3s_>button{color:var(--button-type-a-with-icon-color-4)}.ButtonTypeAWithIcon-module_danger__2gsi8{background-color:var(--button-type-a-with-icon-color-5)}.ButtonTypeAWithIcon-module_danger__2gsi8>button{color:var(--button-type-a-with-icon-color-6)}.ButtonTypeAWithIcon-module_warning__2v1qA{background-color:var(--button-type-a-with-icon-color-7)}.ButtonTypeAWithIcon-module_warning__2v1qA>button{color:var(--button-type-a-with-icon-color-8)}.ButtonTypeAWithIcon-module_none__fYzlE{background-color:var(--button-type-a-with-icon-color-9)}.ButtonTypeAWithIcon-module_none__fYzlE>button{color:var(--button-type-a-with-icon-color-10)}";
+var classes$c = {"container-with-icon":"ButtonTypeAWithIcon-module_container-with-icon__2_laN","size1":"ButtonTypeAWithIcon-module_size1__3XkPS","size2":"ButtonTypeAWithIcon-module_size2__eOqbY","size3":"ButtonTypeAWithIcon-module_size3__31PM5","size4":"ButtonTypeAWithIcon-module_size4__XIKyH","size5":"ButtonTypeAWithIcon-module_size5__2ekQv","size6":"ButtonTypeAWithIcon-module_size6__2_MGF","primary":"ButtonTypeAWithIcon-module_primary__3feQa","secondary":"ButtonTypeAWithIcon-module_secondary__3H3s_","danger":"ButtonTypeAWithIcon-module_danger__2gsi8","warning":"ButtonTypeAWithIcon-module_warning__2v1qA","none":"ButtonTypeAWithIcon-module_none__fYzlE"};
+styleInject(css_248z$c);
 
 var ButtonTypeAWithIcon = function (_a) {
     var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, ryIconSize = _a.ryIconSize, _b = _a.ryContainerAlignSelf, ryContainerAlignSelf = _b === void 0 ? 'center' : _b, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon", "ryIconSize", "ryContainerAlignSelf"]);
@@ -418,45 +581,22 @@ var ButtonTypeAWithIcon = function (_a) {
     return (React.createElement("div", { style: Object.assign(ryContainerStyle, {
             alignSelf: ryContainerAlignSelf,
         }), className: classNames([
-            classes$a['container-with-icon'],
+            classes$c['container-with-icon'],
             props.className,
-            classes$a[ryButtonType],
-            classes$a[ryButtonSize],
+            classes$c[ryButtonType],
+            classes$c[ryButtonSize],
         ]), onClick: containerOnClick1 },
         ryIcon,
         React.createElement("button", __assign({}, props), ryButtonText)));
 };
 
-var css_248z$b = "@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap\");@import url(\"https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap\");.ButtonTypeAWithoutIcon-module_container-without-icon__39ABc{display:flex;justify-content:center;align-items:center;cursor:pointer;border-radius:.1563rem;width:100%;height:100%}.ButtonTypeAWithoutIcon-module_container-without-icon__39ABc button{background-color:transparent;border:none;cursor:pointer}.ButtonTypeAWithoutIcon-module_size1__3qpdH{width:11.5625rem;height:3.125rem}.ButtonTypeAWithoutIcon-module_size1__3qpdH>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size2__lMnBD{width:9.8856rem;height:2.5rem}.ButtonTypeAWithoutIcon-module_size2__lMnBD>button{font-size:.9375rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size3__1aN1S{width:8.235rem;height:2.2256rem}.ButtonTypeAWithoutIcon-module_size3__1aN1S>button{font-size:.7813rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size4__13XYb{width:6.5881rem;height:2.2256rem}.ButtonTypeAWithoutIcon-module_size4__13XYb>button{font-size:.625rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_size5__3BlpE{width:100%!important;height:3.125rem!important}.ButtonTypeAWithoutIcon-module_size5__3BlpE>button{font-size:1.0938rem;display:flex;align-items:center;color:var(--custom-color1);font-family:Roboto;font-style:normal;font-weight:700;margin:0;padding:0;color:var(--custom-color2)}.ButtonTypeAWithoutIcon-module_primary__2fyl3{background-color:var(--button-type-a-without-icon-color-1)}.ButtonTypeAWithoutIcon-module_primary__2fyl3:hover{background-color:var(--button-type-a-without-icon-color-12)}.ButtonTypeAWithoutIcon-module_primary__2fyl3>button{color:var(--button-type-a-without-icon-color-2)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B{background-color:var(--button-type-a-without-icon-color-3)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B:hover{background-color:var(--button-type-a-without-icon-color-13)}.ButtonTypeAWithoutIcon-module_secondary__3ro5B>button{color:var(--button-type-a-without-icon-color-4)}.ButtonTypeAWithoutIcon-module_danger__1qTV4{background-color:var(--button-type-a-without-icon-color-5)}.ButtonTypeAWithoutIcon-module_danger__1qTV4:hover{background-color:var(--button-type-a-without-icon-color-14)}.ButtonTypeAWithoutIcon-module_danger__1qTV4>button{color:var(--button-type-a-without-icon-color-6)}.ButtonTypeAWithoutIcon-module_warning__3a1rN{background-color:var(--button-type-a-without-icon-color-7)}.ButtonTypeAWithoutIcon-module_warning__3a1rN>button{color:var(--button-type-a-without-icon-color-8)}.ButtonTypeAWithoutIcon-module_none__12mm6{background-color:var(--button-type-a-without-icon-color-9)}.ButtonTypeAWithoutIcon-module_none__12mm6>button{color:var(--button-type-a-without-icon-color-10)}";
-var classes$b = {"container-without-icon":"ButtonTypeAWithoutIcon-module_container-without-icon__39ABc","size1":"ButtonTypeAWithoutIcon-module_size1__3qpdH","size2":"ButtonTypeAWithoutIcon-module_size2__lMnBD","size3":"ButtonTypeAWithoutIcon-module_size3__1aN1S","size4":"ButtonTypeAWithoutIcon-module_size4__13XYb","size5":"ButtonTypeAWithoutIcon-module_size5__3BlpE","primary":"ButtonTypeAWithoutIcon-module_primary__2fyl3","secondary":"ButtonTypeAWithoutIcon-module_secondary__3ro5B","danger":"ButtonTypeAWithoutIcon-module_danger__1qTV4","warning":"ButtonTypeAWithoutIcon-module_warning__3a1rN","none":"ButtonTypeAWithoutIcon-module_none__12mm6"};
-styleInject(css_248z$b);
-
-var ButtonTypeAWithoutIcon = function (_a) {
-    var ryButtonText = _a.ryButtonText, ryButtonType = _a.ryButtonType, ryButtonSize = _a.ryButtonSize, ryIcon = _a.ryIcon, ryContainerStyle = _a.ryContainerStyle, ryContainerClassname = _a.ryContainerClassname, ryShowOnlyIcon = _a.ryShowOnlyIcon, ryIconSize = _a.ryIconSize, _b = _a.ryContainerAlignSelf, ryContainerAlignSelf = _b === void 0 ? 'center' : _b, props = __rest(_a, ["ryButtonText", "ryButtonType", "ryButtonSize", "ryIcon", "ryContainerStyle", "ryContainerClassname", "ryShowOnlyIcon", "ryIconSize", "ryContainerAlignSelf"]);
-    var containerOnClick1 = function (event) {
-        if (event.target === event.currentTarget) {
-            props.onClick && props.onClick(event);
-        }
-    };
-    ryContainerStyle = ryContainerStyle ? ryContainerStyle : {};
-    return (React.createElement("div", { style: Object.assign(ryContainerStyle, {
-            alignSelf: ryContainerAlignSelf,
-        }), className: classNames([
-            classes$b['container-without-icon'],
-            props.className,
-            classes$b[ryButtonType],
-            classes$b[ryButtonSize],
-        ]), onClick: containerOnClick1 },
-        React.createElement("button", __assign({}, props), ryButtonText)));
-};
-
-var css_248z$c = ".PaperA-module_container__3QZ9S{border-radius:5px;cursor:unset;background-color:var(--paper-a-color-1);border:1px solid var(--paper-a-color-2);box-shadow:0 4px 10px 0 var(--paper-a-color-3);transition:.175s}.PaperA-module_center__Rhz27{display:flex;justify-content:center;align-items:center}.PaperA-module_flex__1OA_N{display:flex}.PaperA-module_padding__3qSmf{padding:1rem}.PaperA-module_hover__3VzSt:hover{transform:translateY(-2.5px)}";
-var classes$c = {"container":"PaperA-module_container__3QZ9S","center":"PaperA-module_center__Rhz27","flex":"PaperA-module_flex__1OA_N","padding":"PaperA-module_padding__3qSmf","hover":"PaperA-module_hover__3VzSt"};
-styleInject(css_248z$c);
+var css_248z$d = ".PaperA-module_container__3QZ9S{border-radius:5px;cursor:unset;background-color:var(--paper-a-color-1);border:1px solid var(--paper-a-color-2);box-shadow:0 4px 10px 0 var(--paper-a-color-3);transition:.175s}.PaperA-module_center__Rhz27{display:flex;justify-content:center;align-items:center}.PaperA-module_flex__1OA_N{display:flex}.PaperA-module_padding__3qSmf{padding:1rem}.PaperA-module_margin__252QU{margin:1rem}.PaperA-module_hover__3VzSt:hover{transform:translateY(-2.5px)}";
+var classes$d = {"container":"PaperA-module_container__3QZ9S","center":"PaperA-module_center__Rhz27","flex":"PaperA-module_flex__1OA_N","padding":"PaperA-module_padding__3qSmf","margin":"PaperA-module_margin__252QU","hover":"PaperA-module_hover__3VzSt"};
+styleInject(css_248z$d);
 
 var PaperA = function (_a) {
     var containerClassname = _a.containerClassname, props = __rest(_a, ["containerClassname"]);
-    return (React.createElement("div", __assign({ className: classNames(classes$c['container'], containerClassname, props.doeshover && classes$c['hover']) }, props), props.children));
+    return (React.createElement("div", __assign({ className: classNames(classes$d['container'], containerClassname, props.doeshover && classes$d['hover'], props.rymargin && classes$d['margin'], props.rypadding && classes$d['padding']) }, props), props.children));
 };
 
-export { Button, ButtonTypeAWithIcon, ButtonTypeAWithoutIcon, CalendarInput, CheckboxInput, ColorInput, Dropdown, FileInput, ImageInput, InputTypeAWithIcon, InputTypeAWithoutIcon, Modal, Page, PaperA, Select };
+export { Button, ButtonTypeAWithIcon, ButtonTypeAWithoutIcon, CalendarInput, CheckboxInput, ColorInput, ColorInputV2, Dropdown, FileInput, ImageInput, InputTypeAWithIcon, InputTypeAWithoutIcon, Modal, Page, PaperA, Select };

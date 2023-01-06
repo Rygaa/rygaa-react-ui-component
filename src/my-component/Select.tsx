@@ -13,19 +13,25 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   rydefaultvalue?: any;
   ryonChange?: any;
   ryplaceholder?: string;
+  rydisabled?: boolean;
 }
 
 const Select: React.FC<SelectProps> = ({ ...props }) => {
   return (
-    <Selectt
-      defaultValue={props.ryoptions.filter(
-        ({ value }: any) => value === props.rydefaultvalue
+    <div className={classes['ry-root-input']}>
+      {props.rylabel && (
+        <p className={classes['ry-label-input']}>{props.rylabel}</p>
       )}
-      className={classes['select']}
-      options={props.ryoptions}
-      onChange={props.ryonChange}
-      placeholder={props.ryplaceholder}
-    />
+      <Selectt
+        value={props.ryoptions.find((el: any) => {
+          return el.value === props.rydefaultvalue;
+        })}
+        className={classes['select']}
+        options={props.ryoptions}
+        onChange={props.ryonChange}
+        placeholder={props.ryplaceholder}
+      />
+    </div>
   );
 };
 

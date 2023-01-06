@@ -6,6 +6,7 @@ interface PageProps extends React.ButtonHTMLAttributes<HTMLDivElement> {
   containerClassname: any;
   rycenter: boolean;
   rypadding: boolean;
+  rymargin: boolean;
   doeshover: boolean;
 }
 
@@ -15,7 +16,9 @@ const PaperA: React.FC<PageProps> = ({ containerClassname, ...props }) => {
       className={classNames(
         classes['container'],
         containerClassname,
-        props.doeshover && classes['hover']
+        props.doeshover && classes['hover'],
+        props.rymargin && classes['margin'],
+        props.rypadding && classes['padding']
       )}
       {...props}
     >
